@@ -1,0 +1,1223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./styles/index.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <title>PIGGY</title>
+</head>
+
+<body>
+  <nav id="nav" class="nav desktop-nav">
+    <div class="nav-container container-xxl">
+      <ul class="nav-logo">
+        <li class="nav-logo-wrapper">
+          <a href="#"><img src="./assets/img/Logo.svg" alt="LOGO"></a>
+        </li>
+      </ul>
+      <ul class="nav-links">
+        <li class="nav-link"><a class="nav-item" href="#overview">Overview</a></li>
+        <li class="nav-link"><a class="nav-item" href="#security">Security</a></li>
+        <li class="nav-link"><a class="nav-item" href="#tokenomics">Tokenomics</a></li>
+        <li class="nav-link"><a class="nav-item" href="#wallet">Wallet</a></li>
+        <li class="nav-link"><a class="nav-item" href="#team">Team</a></li>
+        <button class="btn nav-btn">Buy $PIGGY</button>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Mobile Nav -->
+
+  <nav id="nav" class="nav mbl-hamburger">
+    <div class="nav-container container-xxl">
+      <ul class="nav-logo">
+        <li class="nav-logo-wrapper">
+          <a href="#"><img src="./assets/img/Logo.svg" alt="LOGO"></a>
+        </li>
+      </ul>
+      <ul>
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+      </ul>
+    </div>
+  </nav>
+
+  <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <li class="nav-link"><a class="nav-item" href="#overview">Overview</a></li>
+    <li class="nav-link"><a class="nav-item" href="#security">Security</a></li>
+    <li class="nav-link"><a class="nav-item" href="#tokenomics">Tokenomics</a></li>
+    <li class="nav-link"><a class="nav-item" href="#wallet">Wallet</a></li>
+    <li class="nav-link"><a class="nav-item" href="#team">Team</a></li>
+    <button class="btn nav-btn mbl-btn">Buy $PIGGY</button>
+  </div>
+
+  <section class="hero">
+    <div class="container container-xxl">
+      <div class="banner__wrapper">
+        <div class="banner-content">
+          <div class="hero__left--section">
+            <div class="hero__content">
+              <h1 class="hero__heading">Non-Custodial Cardano Smart Wallet & your passport to decentralized
+                applications
+                built on Cardano Blockchain.</h1>
+              <p class="hero__para">PIGGY Wallet, is a secure, decentralized Cardano wallet that supports and manages
+                Cardano
+                Native Tokens and NFTs. Piggy Wallet will provide a fully secure system to send, receive, buy,
+                sell, swap and store digital assets on Cardano blockchain.</p>
+            </div>
+            <div class="hero__btns">
+              <a href="#footer" class="btn__yellow" id="join">Join Community</a>
+              <a href="./assets/pdf/Piggy-Wallet-WhitePaper.pdf" target="_blank" class="btn__yellow-border">White Paper
+                1.0</a>
+              <a href="#" class="btn__grey">Seed Sale</a>
+            </div>
+          </div>
+        </div>
+        <div class="slider-wrapper">
+          <div class="slider">
+            <img src="./assets/media/slider/phone.png" class="slides-wrapper-phone">
+            <div class="swiper mySwiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img src="./assets/media/slider/wallet.svg" alt="slide1">
+                </div>
+                <div class="swiper-slide">
+                  <img src="./assets/media/slider/staking.svg" alt="slide2">
+                </div>
+                <div class="swiper-slide">
+                  <img src="./assets/media/slider/swap.svg" alt="slide3">
+                </div>
+                <div class="swiper-slide">
+                  <img src="./assets/media/slider/nft.svg" alt="slide4">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+
+  <section class="overview" id="overview">
+    <div class="container container-xxl">
+      <div class="overview__showcase">
+        <h2 class="overview__heading">Overview</h2>
+        <p class="overview__para">With the steady growth of the Cardano Eco-System coupled with the high numbers of new
+          Cardano
+          projects being launched
+          everyday, there is a huge and undeniable demand to have a Metamask like Cardano wallet that would exist as a
+          mobile
+          App
+          on both Android and Iphone devices where users can store their digital assets.</p>
+        <p class="overview__para">Piggy Wallet will be Non-Custodial (Users Are In Control of Their Keys/Username) as it
+          stores
+          the private keys in users
+          encrypted device. Piggy Wallet will be smart contract powered which creates new model for the functionality of
+          the
+          app.</p>
+        <p class="overview__para">This new model will allow users to explore decentralized applications on Cardano.</p>
+        <p class="overview__para mb-ov-0">The wallet will have built in Staking platform, NFTs Gallery for collectibles
+          and
+          decentralized exchange for swapping
+          ADA, CNT, and CNFTs.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="stake">
+    <div class="container container-xxl">
+      <div class="row stake__row--reverse">
+        <div class="col-8 col-xxl-8 col-xl-8 col-lg-8 col-md-8 col-sm-8">
+          <div class="stake-content">
+            <h1 class="stake-title">Stake to Earn</h1>
+            <p class="stake-desc">Will allow ADA holders to delegate their ADA to a stake pool of their choice and earn
+              just with couple clicks.</p>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="stake-img-wrapper">
+            <img class="stake-img" src="./assets/media/stake.svg" alt="Stake">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="explore">
+    <div class="container container-xxl">
+      <div class="row explore__row-column">
+        <div class="col-4 col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-4">
+          <div class="explore-img-wrapper">
+            <img class="explore-img" src="./assets/media/explore.svg" alt="Explore">
+          </div>
+        </div>
+        <div class="col-1 col-xxl-1 col-xl-1 col-lg-1 col-md-1 col-sm-1"></div>
+        <div class="col-7 col-xxl-7 col-xl-7 col-lg-7 col-md-7 col-sm-7">
+          <div class="explore-content">
+            <h1 class="explore-title">Explore your favorite Apps</h1>
+            <p class="explore-desc">Access DApps on Cardano Applications without running a full Cardano node right on
+              your
+              mobile phone.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="swap">
+    <div class="container container-xxl">
+      <div class="row stake__row--reverse">
+        <div class="col-8 col-xxl-8 col-xl-8 col-lg-8 col-md-8 col-sm-8">
+          <div class="swap-content">
+            <h1 class="swap-title">Trustless Swaps</h1>
+            <p class="swap-desc">Swap ADA & Cardano Native Tokens on Cardano DEXes permissionlessly from the comfort of
+              your mobile device.</p>
+          </div>
+        </div>
+        <div class="col-4 col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-4">
+          <div class="swap-img-wrapper">
+            <img class="swap-img" src="./assets/media/swap.svg" alt="swap">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="fee">
+    <div class="container container-xxl">
+      <div class="row explore__row-column">
+        <div class="col-4 col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-4">
+          <div class="fee-img-wrapper">
+            <img class="fee-img" src="./assets/media/fees.svg" alt="Network-fee">
+          </div>
+        </div>
+        <div class="col-8 col-xxl-8 col-xl-8 col-lg-8 col-md-8 col-sm-8">
+          <div class="fee-content">
+            <h1 class="fee-title">Super Low Fees, Fast Transaction Speed</h1>
+            <p class="fee-desc">Utilizing Cardano's CIP32 Improvement proposal which allow datums themselves to be
+              attached to outputs instead of datum hashes</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="market">
+    <div class="container container-xxl">
+      <div class="row stake__row--reverse">
+        <div class="col-8 col-xxl-8 col-xl-8 col-lg-8 col-md-8 col-sm-8">
+          <div class="market-content">
+            <h1 class="market-title">NFTs Market</h1>
+            <p class="market-desc">Piggy Wallet will Integrate with most NFT marketplaces to enable purchase & trade of
+              Non Fungible Tokens Directly From The App.</p>
+          </div>
+        </div>
+        <div class="col-4 col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-4">
+          <div class="market-img-wrapper">
+            <img class="market-img" src="./assets/media/market.svg" alt="Market">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="security" id="security">
+    <div class="container container-xxl">
+      <div class="security__content">
+        <h1 class="security__heading">Security</h1>
+        <p class="security__para">The wallet is built on a proof of stake blockchain, hence ensuring efficient security
+          and sustainability, we got you
+          covered with all you need to explore the Cardano Ecosystem.</p>
+      </div>
+      <div class="cards">
+        <div class="row">
+          <div class="col-6 col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-6 security__card-col">
+            <div class="card">
+              <div class="card__img--showcase">
+                <img src="./assets/media/self.svg" class="card-img">
+              </div>
+              <div class="card__content">
+                <h1 class="card__heading">Self- Custodial</h1>
+                <p class="card__para">We can never have access to your account, data and assets.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-6 security__card-col">
+            <div class="card recovery--card">
+              <div class="card__img--showcase">
+                <img src="./assets/media/recovery.svg" class="card-img">
+              </div>
+              <div class="card__content">
+                <h1 class="card__heading">Recovery Tool</h1>
+                <p class="card__para">Easily recovery of wallet without paper backup.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-6 security__card-col">
+            <div class="card">
+              <div class="card__img--showcase">
+                <img src="./assets/media/Privacy.svg" class="card-img">
+              </div>
+              <div class="card__content">
+                <h1 class="card__heading">Privacy</h1>
+                <p class="card__para">Piggy Wallet don't keep track of your private address, private keys and assets</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-6 security__card-col">
+            <div class="card biometric--card">
+              <div class="card__img--showcase">
+                <img src="./assets/media/biometric.svg" class="card-img">
+              </div>
+              <div class="card__content">
+                <h1 class="card__heading">2FA & Biometric Verification</h1>
+                <p class="card__para">For personal security and protection of assets.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-6 security__card-col">
+            <div class="card">
+              <div class="card__img--showcase">
+                <img src="./assets/media/ledger.svg" class="card-img">
+              </div>
+              <div class="card__content">
+                <h1 class="card__heading">Ledger Support</h1>
+                <p class="card__para">Will supports hardware wallets plugin Integration with third parties.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Piggy Tokenomics missing -->
+
+  <section class="piggy" id="tokenomics">
+    <div class="container container-xxl">
+      <div class="piggy__text">
+        <h1 class="piggy-heading">PIGGY Tokenomics</h1>
+      </div>
+      <div class="row">
+        <div class="col-3 col-xxl-3 col-xl-3 col-lg-3 col-md-3 col-sm-3 piggy-col">
+          <div class="piggy__card">
+            <div class="piggy__card--content">
+              <h5 class="piggy__card--title">Total Supply</h5>
+              <h3 class="piggy__card--text">500,000,000</h3>
+            </div>
+          </div>
+        </div>
+        <div class="col-3 col-xxl-3 col-xl-3 col-lg-3 col-md-3 col-sm-3 piggy-col">
+          <div class="piggy__card">
+            <div class="piggy__card--content">
+              <h5 class="piggy__card--title">Blockchain</h5>
+              <h3 class="piggy__card--text">Cardano (ADA)</h3>
+            </div>
+          </div>
+        </div>
+        <div class="col-3 col-xxl-3 col-xl-3 col-lg-3 col-md-3 col-sm-3 piggy-col">
+          <div class="piggy__card">
+            <div class="piggy__card--content">
+              <h5 class="piggy__card--title">Token Name</h5>
+              <h3 class="piggy__card--text">PIGGY</h3>
+            </div>
+          </div>
+        </div>
+        <div class="col-3 col-xxl-3 col-xl-3 col-lg-3 col-md-3 col-sm-3 piggy-col">
+          <div class="piggy__card">
+            <div class="piggy__card--content">
+              <h5 class="piggy__card--title">Token Ticker</h5>
+              <h3 class="piggy__card--text">PWT</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- circle -->
+
+      <div class="circle" id="circle-chart">
+        <div class="text">
+          <span>Team/Advisors : 22%</span>
+          <span>Liquidity/Listing : 10%</span>
+          <span>Seed Sale : 17%</span>
+          <span>Ecosystem : 5%</span>
+          <span>Public Sale : 8%</span>
+          <span>Marketing : 6%</span>
+          <span>Staking Rewards : 30%</span>
+          <span>Community Rewards & Airdrops: 2%</span>
+        </div>
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" height="623"
+          viewBox="0 0 623 623">
+          <defs>
+            <filter id="Ellipse_21" x="0" y="0" height="623" filterUnits="userSpaceOnUse">
+              <feOffset dy="8" input="SourceAlpha" />
+              <feGaussianBlur stdDeviation="12.5" result="blur" />
+              <feFlood flood-opacity="0.239" />
+              <feComposite operator="in" in2="blur" />
+              <feComposite in="SourceGraphic" />
+            </filter>
+            <filter id="Ellipse_22" x="27" y="27" width="569" height="569" filterUnits="userSpaceOnUse">
+              <feOffset dy="8" input="SourceAlpha" />
+              <feGaussianBlur stdDeviation="12.5" result="blur-2" />
+              <feFlood flood-opacity="0.239" />
+              <feComposite operator="in" in2="blur-2" />
+              <feComposite in="SourceGraphic" />
+            </filter>
+            <filter id="Ellipse_23" x="54" y="54" width="515" height="515" filterUnits="userSpaceOnUse">
+              <feOffset dy="8" input="SourceAlpha" />
+              <feGaussianBlur stdDeviation="12.5" result="blur-3" />
+              <feFlood flood-opacity="0.239" />
+              <feComposite operator="in" in2="blur-3" />
+              <feComposite in="SourceGraphic" />
+            </filter>
+            <filter id="Ellipse_24" x="81" y="81" width="461" height="461" filterUnits="userSpaceOnUse">
+              <feOffset dy="8" input="SourceAlpha" />
+              <feGaussianBlur stdDeviation="12.5" result="blur-4" />
+              <feFlood flood-opacity="0.239" />
+              <feComposite operator="in" in2="blur-4" />
+              <feComposite in="SourceGraphic" />
+            </filter>
+            <filter id="Ellipse_25" x="108" y="108" width="407" height="407" filterUnits="userSpaceOnUse">
+              <feOffset dy="8" input="SourceAlpha" />
+              <feGaussianBlur stdDeviation="12.5" result="blur-5" />
+              <feFlood flood-opacity="0.239" />
+              <feComposite operator="in" in2="blur-5" />
+              <feComposite in="SourceGraphic" />
+            </filter>
+            <filter id="Ellipse_26" x="135" y="135" width="353" height="353" filterUnits="userSpaceOnUse">
+              <feOffset dy="8" input="SourceAlpha" />
+              <feGaussianBlur stdDeviation="12.5" result="blur-6" />
+              <feFlood flood-opacity="0.239" />
+              <feComposite operator="in" in2="blur-6" />
+              <feComposite in="SourceGraphic" />
+            </filter>
+            <filter id="Ellipse_27" x="162" y="162" width="299" height="299" filterUnits="userSpaceOnUse">
+              <feOffset dy="8" input="SourceAlpha" />
+              <feGaussianBlur stdDeviation="12.5" result="blur-7" />
+              <feFlood flood-opacity="0.239" />
+              <feComposite operator="in" in2="blur-7" />
+              <feComposite in="SourceGraphic" />
+            </filter>
+            <filter id="Ellipse_27-2" x="189" y="189" width="245" height="245" filterUnits="userSpaceOnUse">
+              <feOffset dy="8" input="SourceAlpha" />
+              <feGaussianBlur stdDeviation="12.5" result="blur-8" />
+              <feFlood flood-opacity="0.239" />
+              <feComposite operator="in" in2="blur-8" />
+              <feComposite in="SourceGraphic" />
+            </filter>
+          </defs>
+          <g id="Group_207" data-name="Group 207" transform="translate(-656.5 -6540.5)">
+            <g id="Graph" transform="translate(0 12)">
+              <g id="Team_Advisors_:_22_" data-name="Team/Advisors : 22%">
+                <g id="Ellipse_7" data-name="Ellipse 7" transform="translate(694 6558)" fill="none" stroke="#35363a"
+                  stroke-linecap="round" stroke-width="25" stroke-dasharray="5000 1500" opacity="0.5">
+                  <circle cx="274" cy="274" r="274" stroke="none" />
+                  <circle cx="274" cy="274" r="261.5" fill="none" />
+                </g>
+                <g transform="matrix(1, 0, 0, 1, 656.5, 6528.5)" filter="url(#Ellipse_21)">
+                  <g id="Ellipse_21-2" data-name="Ellipse 21" transform="translate(37.5 29.5)" fill="none"
+                    stroke="#35363a" stroke-linecap="round" stroke-width="25" stroke-dasharray="861 1500">
+                    <circle cx="274" cy="274" r="274" stroke="none" />
+                    <circle cx="274" cy="274" r="261.5" fill="none" />
+                  </g>
+                </g>
+                <g id="Ellipse_8" data-name="Ellipse 8" transform="translate(694 6558)" fill="none" stroke="#f2a214"
+                  stroke-linecap="round" stroke-width="25" stroke-dasharray="0 1700" data-chart-circle
+                  data-chart-dasharray="450, 1700">
+                  <circle cx="274" cy="274" r="274" stroke="none" />
+                  <circle cx="274" cy="274" r="261.5" fill="none" />
+                </g>
+              </g>
+              <g id="Liquidity_Listing_:_10_" data-name="Liquidity/Listing : 10%">
+                <g id="Ellipse_9" data-name="Ellipse 9" transform="translate(721 6585)" fill="none" stroke="#35363a"
+                  stroke-linecap="round" stroke-width="25" stroke-dasharray="5000 1500" opacity="0.5">
+                  <circle cx="247" cy="247" r="247" stroke="none" />
+                  <circle cx="247" cy="247" r="234.5" fill="none" />
+                </g>
+                <g transform="matrix(1, 0, 0, 1, 656.5, 6528.5)" filter="url(#Ellipse_22)">
+                  <g id="Ellipse_22-2" data-name="Ellipse 22" transform="translate(64.5 56.5)" fill="none"
+                    stroke="#35363a" stroke-linecap="round" stroke-width="25" stroke-dasharray="776 1500">
+                    <circle cx="247" cy="247" r="247" stroke="none" />
+                    <circle cx="247" cy="247" r="234.5" fill="none" />
+                  </g>
+                </g>
+                <g id="Ellipse_15" data-name="Ellipse 15" transform="translate(721 6585)" fill="none" stroke="#f2a214"
+                  stroke-linecap="round" stroke-width="25" stroke-dasharray="0 1500" data-chart-circle
+                  data-chart-dasharray="219, 1500">
+                  <circle cx="247" cy="247" r="247" stroke="none" />
+                  <circle cx="247" cy="247" r="234.5" fill="none" />
+                </g>
+              </g>
+              <g id="Seed_Sale_:_17_" data-name="Seed Sale : 17%">
+                <g id="Ellipse_10" data-name="Ellipse 10" transform="translate(748 6612)" fill="none" stroke="#35363a"
+                  stroke-linecap="round" stroke-width="25" stroke-dasharray="5000 1500" opacity="0.5">
+                  <circle cx="220" cy="220" r="220" stroke="none" />
+                  <circle cx="220" cy="220" r="207.5" fill="none" />
+                </g>
+                <g transform="matrix(1, 0, 0, 1, 656.5, 6528.5)" filter="url(#Ellipse_23)">
+                  <g id="Ellipse_23-2" data-name="Ellipse 23" transform="translate(91.5 83.5)" fill="none"
+                    stroke="#35363a" stroke-linecap="round" stroke-width="25" stroke-dasharray="691 1500">
+                    <circle cx="220" cy="220" r="220" stroke="none" />
+                    <circle cx="220" cy="220" r="207.5" fill="none" />
+                  </g>
+                </g>
+                <g id="Ellipse_16" data-name="Ellipse 16" transform="translate(748 6612)" fill="none" stroke="#f2a214"
+                  stroke-linecap="round" stroke-width="25" stroke-dasharray="0 1500" data-chart-circle
+                  data-chart-dasharray="350, 1500">
+                  <circle cx="220" cy="220" r="220" stroke="none" />
+                  <circle cx="220" cy="220" r="207.5" fill="none" />
+                </g>
+              </g>
+              <g id="Ecosystem_:_5_" data-name="Ecosystem : 5%">
+                <g id="Ellipse_11" data-name="Ellipse 11" transform="translate(775 6639)" fill="none" stroke="#35363a"
+                  stroke-linecap="round" stroke-width="25" stroke-dasharray="5000 1500" opacity="0.5">
+                  <circle cx="193" cy="193" r="193" stroke="none" />
+                  <circle cx="193" cy="193" r="180.5" fill="none" />
+                </g>
+                <g transform="matrix(1, 0, 0, 1, 656.5, 6528.5)" filter="url(#Ellipse_24)">
+                  <g id="Ellipse_24-2" data-name="Ellipse 24" transform="translate(118.5 110.5)" fill="none"
+                    stroke="#35363a" stroke-linecap="round" stroke-width="25" stroke-dasharray="606 1500">
+                    <circle cx="193" cy="193" r="193" stroke="none" />
+                    <circle cx="193" cy="193" r="180.5" fill="none" />
+                  </g>
+                </g>
+                <g id="Ellipse_17" data-name="Ellipse 17" transform="translate(775 6639)" fill="none" stroke="#f2a214"
+                  stroke-linecap="round" stroke-width="25" stroke-dasharray="0 1500" data-chart-circle
+                  data-chart-dasharray="45, 1500">
+                  <circle cx="193" cy="193" r="193" stroke="none" />
+                  <circle cx="193" cy="193" r="180.5" fill="none" />
+                </g>
+              </g>
+              <g id="Public_Sale_:_8_" data-name="Public Sale : 8%">
+                <g id="Ellipse_12" data-name="Ellipse 12" transform="translate(802 6666)" fill="none" stroke="#35363a"
+                  stroke-linecap="round" stroke-width="25" stroke-dasharray="5000 1500" opacity="0.5">
+                  <circle cx="166" cy="166" r="166" stroke="none" />
+                  <circle cx="166" cy="166" r="153.5" fill="none" />
+                </g>
+                <g transform="matrix(1, 0, 0, 1, 656.5, 6528.5)" filter="url(#Ellipse_25)">
+                  <g id="Ellipse_25-2" data-name="Ellipse 25" transform="translate(145.5 137.5)" fill="none"
+                    stroke="#35363a" stroke-linecap="round" stroke-width="25" stroke-dasharray="521 1500">
+                    <circle cx="166" cy="166" r="166" stroke="none" />
+                    <circle cx="166" cy="166" r="153.5" fill="none" />
+                  </g>
+                </g>
+                <g id="Ellipse_18" data-name="Ellipse 18" transform="translate(802 6666)" fill="none" stroke="#f2a214"
+                  stroke-linecap="round" stroke-width="25" stroke-dasharray="0 1500" data-chart-circle
+                  data-chart-dasharray="100, 1500">
+                  <circle cx="166" cy="166" r="166" stroke="none" />
+                  <circle cx="166" cy="166" r="153.5" fill="none" />
+                </g>
+              </g>
+              <g id="Marketing_:_6_" data-name="Marketing : 6%">
+                <g id="Ellipse_13" data-name="Ellipse 13" transform="translate(829 6693)" fill="none" stroke="#35363a"
+                  stroke-linecap="round" stroke-width="25" stroke-dasharray="5000 1500" opacity="0.5">
+                  <circle cx="139" cy="139" r="139" stroke="none" />
+                  <circle cx="139" cy="139" r="126.5" fill="none" />
+                </g>
+                <g transform="matrix(1, 0, 0, 1, 656.5, 6528.5)" filter="url(#Ellipse_26)">
+                  <g id="Ellipse_26-2" data-name="Ellipse 26" transform="translate(172.5 164.5)" fill="none"
+                    stroke="#35363a" stroke-linecap="round" stroke-width="25" stroke-dasharray="436 1500">
+                    <circle cx="139" cy="139" r="139" stroke="none" />
+                    <circle cx="139" cy="139" r="126.5" fill="none" />
+                  </g>
+                </g>
+                <g id="Ellipse_19" data-name="Ellipse 19" transform="translate(829 6693)" fill="none" stroke="#f2a214"
+                  stroke-linecap="round" stroke-width="25" stroke-dasharray="0 1500" data-chart-circle
+                  data-chart-dasharray="65, 1500">
+                  <circle cx="139" cy="139" r="139" stroke="none" />
+                  <circle cx="139" cy="139" r="126.5" fill="none" />
+                </g>
+              </g>
+              <g id="Staking_Rewards_:_30_" data-name="Staking Rewards : 30%">
+                <g id="Ellipse_14" data-name="Ellipse 14" transform="translate(856 6720)" fill="none" stroke="#35363a"
+                  stroke-linecap="round" stroke-width="25" stroke-dasharray="5000 1500" opacity="0.5">
+                  <circle cx="112" cy="112" r="112" stroke="none" />
+                  <circle cx="112" cy="112" r="99.5" fill="none" />
+                </g>
+                <g transform="matrix(1, 0, 0, 1, 656.5, 6528.5)" filter="url(#Ellipse_27)">
+                  <g id="Ellipse_27-3" data-name="Ellipse 27" transform="translate(199.5 191.5)" fill="none"
+                    stroke="#35363a" stroke-linecap="round" stroke-width="25" stroke-dasharray="351 1500">
+                    <circle cx="112" cy="112" r="112" stroke="none" />
+                    <circle cx="112" cy="112" r="99.5" fill="none" />
+                  </g>
+                </g>
+                <g id="Ellipse_20" data-name="Ellipse 20" transform="translate(856 6720)" fill="none" stroke="#f2a214"
+                  stroke-linecap="round" stroke-width="25" stroke-dasharray="0 1500" data-chart-circle
+                  data-chart-dasharray="320 1500">
+                  <circle cx="112" cy="112" r="112" stroke="none" />
+                  <circle cx="112" cy="112" r="99.5" fill="none" />
+                </g>
+              </g>
+              <g id="Staking_Rewards_:_30_2" data-name="Staking Rewards : 30%">
+                <g id="Ellipse_14-2" data-name="Ellipse 14" transform="translate(883 6747)" fill="none" stroke="#35363a"
+                  stroke-linecap="round" stroke-width="25" stroke-dasharray="5000 1500" opacity="0.5">
+                  <circle cx="85" cy="85" r="85" stroke="none" />
+                  <circle cx="85" cy="85" r="72.5" fill="none" />
+                </g>
+                <g transform="matrix(1, 0, 0, 1, 656.5, 6528.5)" filter="url(#Ellipse_27-2)">
+                  <g id="Ellipse_27-4" data-name="Ellipse 27" transform="translate(226.5 218.5)" fill="none"
+                    stroke="#35363a" stroke-linecap="round" stroke-width="25" stroke-dasharray="267 1500">
+                    <circle cx="85" cy="85" r="85" stroke="none" />
+                    <circle cx="85" cy="85" r="72.5" fill="none" />
+                  </g>
+                </g>
+                <g id="Ellipse_20-2" data-name="Ellipse 20" transform="translate(883 6747)" fill="none" stroke="#f2a214"
+                  stroke-linecap="round" stroke-width="25" stroke-dasharray="0 1500" data-chart-circle
+                  data-chart-dasharray="17 1500">
+                  <circle cx="85" cy="85" r="85" stroke="none" />
+                  <circle cx="85" cy="85" r="72.5" fill="none" />
+                </g>
+              </g>
+            </g>
+          </g>
+        </svg>
+      </div>
+
+      <!-- circle -->
+
+      <div class="row">
+        <div class="col-6 col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-6">
+          <div class="piggy__bottom--card">
+            <div class="piggy__bottom--card-content">
+              <h5 class="piggy__bottom--card-title">Team</h5>
+              <h3 class="piggy__bottom--card-text">7 Months Cliff, Then 10% Monthly until fully
+                expanded</h3>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-6">
+          <div class="piggy__bottom--card seed-content">
+            <div class="piggy__bottom--card-content">
+              <h5 class="piggy__bottom--card-title">Seed Sale</h5>
+              <h3 class="piggy__bottom--card-text">4 Months cliff, then 25% Unlocked monthly until
+                fully expanded</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="roadmap" id="roadmap">
+    <div class="container container-xxl">
+      <div class="row">
+        <div class="col-12 col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12">
+          <h1 class="roadmap-title">Roadmap</h1>
+          <p class="roadmap-hdr-desc">Explore and learn more about piggy wallet development progress</p>
+        </div>
+      </div>
+      <div class="row roadmap-row">
+        <div class="roadmap-col-wrapper">
+          <div class="roadmap-content">
+            <div class="roadmap-wrapper">
+              <p class="roadmap-desc">- Announce Piggy Wallet Project</p>
+              <p class="roadmap-desc">- Social Media Awareness</p>
+              <p class="roadmap-desc">- PIGGY Wallet Website Launch</p>
+              <p class="roadmap-desc">- WhitePaper V1 Release</p>
+              <p class="roadmap-desc">- PIGGY Tokenomics</p>
+              <p class="roadmap-desc">- Piggy Web Wallet Wireframe (Architecture)</p>
+              <p class="roadmap-desc">- Seed Sale</p>
+              <p class="roadmap-desc">- NodeJS complete setup with dependencies and architecture</p>
+              <p class="roadmap-desc">- Version control setup for Piggy Wallet project</p>
+              <p class="roadmap-desc">- Infrastructure setup for Piggy Wallet project</p>
+              <p class="roadmap-desc">- Complete Database design</p>
+              <p class="roadmap-desc">- Complete Cardano Blockchain design</p>
+              <p class="roadmap-desc">- Overall Architecture design</p>
+              <p class="roadmap-desc">- Components Interaction design</p>
+            </div>
+            <h1 class="roadmap-bottom-title">Q2, 2022</h1>
+          </div>
+          <div class="roadmap__triangle-one">
+            <img src="./assets/media/roadmap-triangle-1.svg">
+          </div>
+          <div class="roadmap__triangle-two">
+            <img src="./assets/media/roadmap-triangle-2.svg">
+          </div>
+        </div>
+        <div class="roadmap-col-wrapper">
+          <div class="roadmap-content">
+            <div class="roadmap-wrapper">
+              <p class="roadmap-desc">- Prototype for web screens</p>
+              <p class="roadmap-desc">- UI/UX Development for web wallet</p>
+              <p class="roadmap-desc">- UI Implementation with NodeJS</p>
+              <p class="roadmap-desc">- Web Screens Linking</p>
+              <p class="roadmap-desc">- Launching of Functional prototype</p>
+              <p class="roadmap-desc">- Code optimization process for the website</p>
+              <p class="roadmap-desc">- Integrating UI with Front-End validations</p>
+              <p class="roadmap-desc">- Integrating UI with Back-End framework against NodeJS</p>
+              <p class="roadmap-desc">- Integrating DOM Architecture to Convert Working Screen</p>
+              <p class="roadmap-desc">- Integrating Complete Front-End with react and back end architecture in place</p>
+              <p class="roadmap-desc">- Infrastructure setup for web wallet</p>
+              <p class="roadmap-desc">- Web Wallet Pages Development</p>
+              <p class="roadmap-desc">- (TGE) Integrating PIGGY Web Wallet into Cardano Blockchain</p>
+              <p class="roadmap-desc">- Smart Contract Implementation</p>
+              <p class="roadmap-desc">- Public Sale Round</p>
+            </div>
+            <h1 class="roadmap-bottom-title">Q3, 2022</h1>
+          </div>
+          <div class="roadmap__triangle-one">
+            <img src="./assets/media/roadmap-triangle-1.svg">
+          </div>
+          <div class="roadmap__triangle-two">
+            <img src="./assets/media/roadmap-triangle-2.svg">
+          </div>
+        </div>
+        <div class="roadmap-col-wrapper">
+          <div class="roadmap-content">
+            <div class="roadmap-wrapper">
+              <p class="roadmap-desc">
+                - Exchange Listing <br>
+                - Web Wallet Launch <br>
+                - Cardano tokens integration <br>
+                - Multi Wallet Support <br>
+                - Currency Conversion Set up <br>
+                - Integrating QR code scan <br>
+                - Integrating BUY option using 3rd Party (Fiat purchase with 3rd party) <br>
+                - Integrating Swap Protocol <br>
+                - Piggy Wallet Audit <br>
+                - Coinmarketcap / Coingecko Listing <br>
+              </p>
+            </div>
+            <h1 class="roadmap-bottom-title">Q4, 2022</h1>
+          </div>
+          <div class="roadmap__triangle-one">
+            <img src="./assets/media/roadmap-triangle-1.svg">
+          </div>
+          <div class="roadmap__triangle-two">
+            <img src="./assets/media/roadmap-triangle-2.svg">
+          </div>
+        </div>
+        <div class="roadmap-col-wrapper">
+          <div class="roadmap-content">
+            <div class="roadmap-wrapper">
+              <p class="roadmap-desc">
+                - Prototype for Mobile App Screens <br>
+                - UI / UX Development for Mobile App <br>
+                - Mobile App Screens Linking <br>
+                - Launching of Functional Complete Prototype of the Mobile App Wallet <br>
+                - Code optimization OW process for Wallet App <br>
+                - Integrating UI with Front-End validations <br>
+                - Integrating UI with Back-End framework against NodeJS <br>
+                - Integrating Complete Front-End with react and back end architecture in place <br>
+                - Infrastructure setup for Mobile App wallet <br>
+                - Mobile App Development <br>
+                - QA Testing <br>
+                - (TGE) Integrating Piggy App Wallet into Cardano Blockchain <br>
+                - Smart Contract Implementation <br>
+              </p>
+            </div>
+            <h1 class="roadmap-bottom-title">Q1, 2022</h1>
+          </div>
+          <div class="roadmap__triangle-one">
+            <img src="./assets/media/roadmap-triangle-1.svg">
+          </div>
+          <div class="roadmap__triangle-two">
+            <img src="./assets/media/roadmap-triangle-2.svg">
+          </div>
+        </div>
+        <div class="roadmap-col-wrapper">
+          <div class="roadmap-content">
+            <div class="roadmap-wrapper">
+              <p class="roadmap-desc">
+                - Launching of Mobile Wallet (Android beta and iOs beta) <br>
+                - Mnemonics <br>
+                - Integrating BUY option (Fiat purchase with 3rd party) <br>
+                - Trustless Swapping Integration <br>
+                - Mainnet Deployment <br>
+                - QA Testing <br>
+                - Piggy In App CNT Staking <br>
+                - Yoroi DApp Connector Support <br>
+                - Integrating of NFT Staking Protocol <br>
+                - Cardano NFTs Market Place Support <br>
+                - Hardware Wallet Support (Trezor/Ledger Nano) <br>
+                - PIGGY Stake Pool </p>
+            </div>
+            <h1 class="roadmap-bottom-title">Q2, 2022</h1>
+          </div>
+          <div class="roadmap__triangle-two">
+            <img src="./assets/media/roadmap-triangle-2.svg">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="faq" id="faq">
+    <div class="container container-xxl">
+      <div class="row">
+        <div class="col-12 col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12">
+          <h1 class="faq-title">FAQs</h1>
+        </div>
+        <div class="col-12 col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 faq-mb">
+          <div class="faq-wrapper">
+            <div class="faq-content">
+              <h1 class="faq-conten-title">What is Piggy Wallet?</h1>
+              <button class="active-btn faq-btn">+</button>
+            </div>
+            <div class="faq-desc-wrapper">
+              <p class="faq-desc"> PIGGY WALLET is a non-custodial smart crypto wallet and open-source to
+                decentralized
+                applications on
+                Cardano Blockchain.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 faq-mb">
+          <div class="faq-wrapper">
+            <div class="faq-content">
+              <h1 class="faq-conten-title">Why launching a wallet with gateway to Cardano blockchain Apps?</h1>
+              <button class="active-btn faq-btn">+</button>
+            </div>
+            <div class="faq-desc-wrapper">
+              <p class="faq-desc"> To build a Scalable decentralized wallet that will break the bridge and yet set a
+                healthy competition in Cardano wallet Eco-system which in turn encourage the general growth of the
+                Ecosystem</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 faq-mb">
+          <div class="faq-wrapper">
+            <div class="faq-content">
+              <h1 class="faq-conten-title">Will PIGGY Wallet have a mobile app version?</h1>
+              <button class="active-btn faq-btn">+</button>
+            </div>
+            <div class="faq-desc-wrapper">
+              <p class="faq-desc"> Yes, PIGGY Wallet will be available on android and iphone app stores
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 faq-mb">
+          <div class="faq-wrapper">
+            <div class="faq-content">
+              <h1 class="faq-conten-title">What is Piggy Wallet App?</h1>
+              <button class="active-btn faq-btn">+</button>
+            </div>
+            <div class="faq-desc-wrapper">
+              <p class="faq-desc"> Piggy Wallet App is a one-stop solution to all your DeFi needs. It allow users to use
+                crypto wallets effectively and explore decentralized applications in a simplest yet most secured way.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 faq-mb">
+          <div class="faq-wrapper">
+            <div class="faq-content">
+              <h1 class="faq-conten-title">Will hardware wallets be supported?</h1>
+              <button class="active-btn faq-btn">+</button>
+            </div>
+            <div class="faq-desc-wrapper">
+              <p class="faq-desc"> Yes, hardware wallets will be supported and it will require no special treatment on
+                the software application end.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 faq-mb">
+          <div class="faq-wrapper">
+            <div class="faq-content">
+              <h1 class="faq-conten-title">How does Piggy token benefit Piggy wallet community?</h1>
+              <button class="active-btn faq-btn">+</button>
+            </div>
+            <div class="faq-desc-wrapper">
+              <p class="faq-desc"> Piggy token holders would influence the future of PIGGY Wallet by signaling their
+                support for upgrades, voting rights, introducing new ideas to the ecosystem and also earn rewards for
+                holding.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 faq-mb">
+          <div class="faq-wrapper">
+            <div class="faq-content">
+              <h1 class="faq-conten-title">How Many $PWT Are In Existence?</h1>
+              <button class="active-btn faq-btn">+</button>
+            </div>
+            <div class="faq-desc-wrapper">
+              <p class="faq-desc"> In total there is 500 Million Piggy tokens minted.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="integration" id="wallet">
+    <div class="container container-mid">
+      <div class="row">
+        <div class="col-12 col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12">
+          <h1 class="integration-title">Partners & Integrations</h1>
+          <p class="integration-desc">Explore and learn more about the helpful tools and applications that we're using
+            to develop PIGGY Wallet</p>
+        </div>
+        <div class="col-6 col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-6 wallet-mb">
+          <a target="_blank" href="https://daedaluswallet.io/">
+            <button class="btn btn-wallet">
+              <img src="./assets/img/wallet.png" alt="Wallet">
+            </button></a>
+        </div>
+        <div class="col-6 col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-6">
+          <a target="_blank" href="https://yoroi-wallet.com/">
+            <button class="btn btn-wallet-logo">
+              <img src="./assets/img/wallet-logo.png" alt="Wallet-logo">
+            </button></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="team" id="team">
+    <div class="container container-xl team__container">
+      <div class="team__content">
+        <h1 class="team__heading">Team</h1>
+      </div>
+      <div class="row">
+        <div class="col-12 col-xxl-3 col-xl-3 col-lg-3 col-md-3 col-sm-3">
+          <div class="person__content pc-mb-64" id="spaces">
+            <div class="person__img">
+              <img src="./assets/img/hung.png" class="person--img">
+            </div>
+            <div class="person__info">
+              <h5 class="person__name"> Hung Attavong </h5>
+              <p class="person__position"> Technical & Blockchain Consultant </p>
+              <p class="person__desc hidden person_desc__mobile">
+                <span class="person__arrow person-one"></span>
+                Hung has been a co-founder, advisor and consultant to multiple technology companies in the states and
+                have extended his knowledge and experience to blockchain technology having been part of numerous
+                starts-up projects on Etherum Blockchain, Hung has lead the development of more than 50 projects across
+                various consumer and enterprise companies and now working with the team on Cardano Blockchain.
+                <br>
+                <br class="team-break">
+                <span class="person__social--media">
+                  <a href="#"><img src="./assets/media/facebook.svg"></a>
+                  <a href="#"><img src="./assets/media/twitter.svg"></a>
+                  <a href="#"><img src="./assets/media/medium.svg"></a>
+                </span>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-xxl-3 col-xl-3 col-lg-3 col-md-3 col-sm-3">
+          <div class="person__content pc-mb-64" id="spaces">
+            <div class="person__img">
+              <img src="./assets/img/umair.png" class="person--img">
+            </div>
+            <div class="person__info">
+              <h5 class="person__name">Umair Imtiaz</h5>
+              <p class="person__position">Software Engineer</p>
+              <p class="person__desc hidden person_desc__mobile">
+                <span class="person__arrow person-two"></span>
+                Umair has a good background in software engineering, he has overseen success in lots of position in
+                fintech and DeFi projects. He is determined to give the project the best with his vast knowledge and
+                experience.
+                <br> <br class="team-break">
+                <span class="person__social--media">
+                  <a href="#"><img src="./assets/media/facebook.svg"></a>
+                  <a href="#"><img src="./assets/media/twitter.svg"></a>
+                  <a href="#"><img src="./assets/media/medium.svg"></a>
+                </span>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-xxl-3 col-xl-3 col-lg-3 col-md-3 col-sm-3">
+          <div class="person__content pc-mb-64" id="spaces">
+            <div class="person__img">
+              <img src="./assets/img/yokin.png" class="person--img">
+            </div>
+            <div class="person__info">
+              <h5 class="person__name">Yokin Wan</h5>
+              <p class="person__position">PR & Community Manager</p>
+              <p class="person__desc hidden person_desc__mobile">
+                <span class="person__arrow person-three"></span>
+                Yokin is a communicator and marketer with experience in the field, she has the ability to connect our
+                community, businesses, projects together in a well detailed approach. She will forsee the progress of
+                the project by providing quality PR and marketing of the project.
+                <br> <br class="team-break">
+                <span class="person__social--media">
+                  <a href="#"><img src="./assets/media/facebook.svg"></a>
+                  <a href="#"><img src="./assets/media/twitter.svg"></a>
+                  <a href="#"><img src="./assets/media/medium.svg"></a>
+                </span>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-xxl-3 col-xl-3 col-lg-3 col-md-3 col-sm-3">
+          <div class="person__content pc-mb-64" id="spaces">
+            <div class="person__img">
+              <img src="./assets/img/moeed.png" class="person--img">
+            </div>
+            <div class="person__info">
+              <h5 class="person__name">Moeed Shahid</h5>
+              <p class="person__position">UI/UX Design Engineer</p>
+              <p class="person__desc hidden person_desc__mobile">
+                <span class="person__arrow person-four"></span>
+                Moeed came from a multidisciplinary background of Human Computer Interaction, Communication and
+                Industrial Design. He has over 6 years of experience in design works both in Technology and Automotive
+                industries. Exploring his experience on blockchain technology to bridge the UI/UX gap in the crypto
+                space, He is focusing on designing a seamless DeFi user experience for everyone.
+                <br> <br class="team-break">
+                <span class="person__social--media">
+                  <a href="#"><img src="./assets/media/facebook.svg"></a>
+                  <a href="#"><img src="./assets/media/twitter.svg"></a>
+                  <a href="#"><img src="./assets/media/medium.svg"></a>
+                </span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <p class="person__desc hidden person_desc__desktop">
+          <span class="person__arrow person-one"></span>
+          Hung has been a co-founder, advisor and consultant to multiple technology companies in the states and
+          have extended his knowledge and experience to blockchain technology having been part of numerous
+          starts-up projects on Etherum Blockchain, Hung has lead the development of more than 50 projects across
+          various consumer and enterprise companies and now working with the team on Cardano Blockchain.
+          <br> <br class="team-break">
+          <span class="person__social--media">
+            <a href="#"><img src="./assets/media/facebook.svg"></a>
+            <a href="#"><img src="./assets/media/twitter.svg"></a>
+            <a href="#"><img src="./assets/media/medium.svg"></a>
+          </span>
+        </p>
+        <p class="person__desc hidden person_desc__desktop">
+          <span class="person__arrow person-two"></span>
+          Umair has a good background in software engineering, he has overseen success in lots of position in
+          fintech and DeFi projects. He is determined to give the project the best with his vast knowledge and
+          experience.
+          <br> <br class="team-break">
+          <span class="person__social--media">
+            <a href="#"><img src="./assets/media/facebook.svg"></a>
+            <a href="#"><img src="./assets/media/twitter.svg"></a>
+            <a href="#"><img src="./assets/media/medium.svg"></a>
+          </span>
+        </p>
+        <p class="person__desc hidden person_desc__desktop">
+          <span class="person__arrow person-three"></span>
+          Yokin is a communicator and marketer with experience in the field, she has the ability to connect our
+          community, businesses, projects together in a well detailed approach. She will forsee the progress of
+          the project by providing quality PR and marketing of the project.
+          <br> <br class="team-break">
+          <span class="person__social--media">
+            <a href="#"><img src="./assets/media/facebook.svg"></a>
+            <a href="#"><img src="./assets/media/twitter.svg"></a>
+            <a href="#"><img src="./assets/media/medium.svg"></a>
+          </span>
+        </p>
+        <p class="person__desc hidden person_desc__desktop">
+          <span class="person__arrow person-four"></span>
+          Moeed came from a multidisciplinary background of Human Computer Interaction, Communication and Industrial
+          Design. He has over 6 years of experience in design works both in Technology and Automotive industries.
+          Exploring his experience on blockchain technology to bridge the UI/UX gap in the crypto space, He is focusing
+          on designing a seamless DeFi user experience for everyone.
+          <br> <br class="team-break">
+          <span class="person__social--media">
+            <a href="#"><img src="./assets/media/facebook.svg"></a>
+            <a href="#"><img src="./assets/media/twitter.svg"></a>
+            <a href="#"><img src="./assets/media/medium.svg"></a>
+          </span>
+        </p>
+      </div>
+      <div class="row">
+        <div class="col-12 col-xxl-3 col-xl-3 col-lg-3 col-md-3 col-sm-3">
+          <div class="person__content pc-mb-64" id="spaces">
+            <div class="person__img">
+              <img src="./assets/img/atif.png" class="person--img">
+            </div>
+            <div class="person__info">
+              <h5 class="person__name">M. Atif Abdul Sattar</h5>
+              <p class="person__position">Senior Designer</p>
+              <p class="person__desc hidden person_desc__mobile">
+                <span class="person__arrow person-five"></span>
+                Atif has been in the crypto space for years now and has worked on so many starts up projects, he is
+                using his
+                overall experience to help attain the best possible position on the development of the project. He has
+                also
+                served as an advisor to some projects and he is here to continue his great work.
+                <br> <br class="team-break">
+                <br>
+                <br>
+                <span class="person__social--media">
+                  <a href="#"><img src="./assets/media/facebook.svg"></a>
+                  <a href="#"><img src="./assets/media/twitter.svg"></a>
+                  <a href="#"><img src="./assets/media/medium.svg"></a>
+                </span>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-xxl-3 col-xl-3 col-lg-3 col-md-3 col-sm-3">
+          <div class="person__content pc-mb-64" id="spaces">
+            <div class="person__img">
+              <img src="./assets/img/asfand.png" class="person--img">
+            </div>
+            <div class="person__info">
+              <h5 class="person__name">Asfand Yar Khan</h5>
+              <p class="person__position">Senior Haskell Developer</p>
+              <p class="person__desc hidden person_desc__mobile">
+                <span class="person__arrow person-six"></span>
+                Bachelor of Computer Science with 8 years experience in Computer Programming, web and functional
+                programming.
+                Has a year experience working in advanced Haskell and Plutus. Aims to give the best he can in developing
+                the
+                project.
+                <br> <br class="team-break">
+                <span class="person__social--media">
+                  <a href="#"><img src="./assets/media/facebook.svg"></a>
+                  <a href="#"><img src="./assets/media/twitter.svg"></a>
+                  <a href="#"><img src="./assets/media/medium.svg"></a>
+                </span>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-xxl-3 col-xl-3 col-lg-3 col-md-3 col-sm-3">
+          <div class="person__content pc-mb-64" id="spaces">
+            <div class="person__img">
+              <img src="./assets/img/rizwan.png" class="person--img">
+            </div>
+            <div class="person__info">
+              <h5 class="person__name">Rizwan Atta</h5>
+              <p class="person__position">React Native and Haskell Developer</p>
+              <p class="person__desc hidden person_desc__mobile">
+                <span class="person__arrow person-seven"></span>
+                Started coding at a very early age and has a strong experience in js react and haskell. He has more than
+                10
+                years experience working in functional programming languages like Haskell and so on. He will use his
+                experience with other developers in building a functional PIGGY Wallet.
+                <br> <br class="team-break">
+                <span class="person__social--media">
+                  <a href="#"><img src="./assets/media/facebook.svg"></a>
+                  <a href="#"><img src="./assets/media/twitter.svg"></a>
+                  <a href="#"><img src="./assets/media/medium.svg"></a>
+                </span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <p class="person__desc hidden person_desc__desktop">
+          <span class="person__arrow person-five"></span>
+          Atif has been in the crypto space for years now and has worked on so many starts up projects, he is
+          using his
+          overall experience to help attain the best possible position on the development of the project. He has
+          also
+          served as an advisor to some projects and he is here to continue his great work.
+          <br> <br class="team-break">
+          <span class="person__social--media">
+            <a href="#"><img src="./assets/media/facebook.svg"></a>
+            <a href="#"><img src="./assets/media/twitter.svg"></a>
+            <a href="#"><img src="./assets/media/medium.svg"></a>
+          </span>
+        </p>
+        <p class="person__desc hidden person_desc__desktop">
+          <span class="person__arrow person-six"></span>
+          Bachelor of Computer Science with 8 years experience in Computer Programming, web and functional
+          programming.
+          Has a year experience working in advanced Haskell and Plutus. Aims to give the best he can in developing
+          the
+          project.
+          <br> <br class="team-break">
+          <span class="person__social--media">
+            <a href="#"><img src="./assets/media/facebook.svg"></a>
+            <a href="#"><img src="./assets/media/twitter.svg"></a>
+            <a href="#"><img src="./assets/media/medium.svg"></a>
+          </span>
+        </p>
+        <p class="person__desc hidden person_desc__desktop">
+          <span class="person__arrow person-seven"></span>
+          Started coding at a very early age and has a strong experience in js react and haskell. He has more than
+          10
+          years experience working in functional programming languages like Haskell and so on. He will use his
+          experience with other developers in building a functional PIGGY Wallet.
+          <br> <br class="team-break">
+          <span class="person__social--media">
+            <a href="#"><img src="./assets/media/facebook.svg"></a>
+            <a href="#"><img src="./assets/media/twitter.svg"></a>
+            <a href="#"><img src="./assets/media/medium.svg"></a>
+          </span>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer" id="footer">
+    <div class="container container-xxl">
+      <div class="footer__top--content">
+        <div class="footer__logo">
+          <img src="assets/img/footer-logo.png" class="footer__logo--img">
+        </div>
+        <div class="footer__text">
+          <p class="footer__para">A non-custodial smart wallet and gateway to DApps on Cardano.</p>
+        </div>
+      </div>
+      <div class="footer__showcase">
+        <div class="footer__social--info">
+          <div class="footer__social--links">
+            <a href="https://twitter.com/piggy_wallet" target="_blank"><img src="./assets/media/twitter.svg"
+                class="social-img"></a>
+            <a href="https://piggywallet.medium.com/" target="_blank"><img src="./assets/media/medium.svg"
+                class="social-img"></a>
+            <a href="https://t.me/piggy_wallet" target="_blank"><img src="./assets/media/telegram.svg"
+                class="social-img"></a>
+            <a href="https://www.facebook.com/PIGGY-Wallet-105688362138177" target="_blank"><img
+                src="./assets/media/facebook.svg" class="social-img"></a>
+          </div>
+          <div class="footer__contact">
+            <p class="footer__email fe-mb-19">Contact Us : support@piggywallet.io</p>
+            <p class="footer__email">We're Hiring : career@piggywallet.io</p>
+          </div>
+        </div>
+        <div class="footer__nav">
+          <ul class="footer__nav--links">
+            <li class="footer__nav-link"><a href="https://admin-215.gitbook.io/piggy-wallet-gitbook/"
+                target="_blank">Docs</a></li>
+            <li class="footer__nav-link"><a href="#tokenomics">Tokenomics</a></li>
+            <li class="footer__nav-link"><a href="#roadmap">Roadmap</a></li>
+            <li class="footer__nav-link"><a href="./assets/pdf/Piggy-Wallet-WhitePaper.pdf"
+                target="_blank">Whitepaper</a></li>
+            <li class="footer__nav-link"><a href="#faq">FAQs</a></li>
+          </ul>
+          <ul class="footer__nav--links fnl-mb-0">
+            <li class="footer__nav-link"><a href="#wallet">Wallet</a></li>
+            <li class="footer__nav-link"><a href="#team">Team</a></li>
+            <li class="footer__nav-link"><a href="https://github.com/piggywallet" target="_blank">Github</a></li>
+            <li class="footer__nav-link"><a href="#"><span>Buy $PIGGY</span></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script>
+  var swiper = new Swiper(".mySwiper", {
+    spaceBetween: 0,
+    centeredSlides: true,
+    watchSlidesProgress: true,
+    slidesPerView: 1,
+    loop: true,
+    autoplay: {
+      delay: 2500,
+      disableOnInteraction: false,
+    }
+  });
+</script>
+<script src="./assets/script/script.js"></script>
+
+</html>

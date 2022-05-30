@@ -1,0 +1,28 @@
+{
+  "name": "piggy-postcss",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run watch",
+    "watch": "concurrently \"npm run postcss:watch\" \"live-server ./dist\"",
+    "build": "npm run postcss:build",
+    "serve": "live-server ./dist",
+    "postcss:watch": "postcss ./src/styles/index.css -o ./dist/styles/index.css -w -u postcss-import autoprefixer",
+    "postcss:build": "postcss ./src/styles/index.css -o ./dist/styles/index.css -m -u  postcss-import autoprefixer postcss-minify"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^10.4.0",
+    "concurrently": "^6.4.0",
+    "live-server": "^1.2.1",
+    "postcss": "^8.4.5",
+    "postcss-import": "^14.0.2",
+    "postcss-minify": "^1.1.0"
+  },
+  "dependencies": {
+    "postcss-cli": "^9.1.0"
+  }
+}
