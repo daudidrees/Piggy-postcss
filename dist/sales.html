@@ -12,7 +12,7 @@
     rel="stylesheet">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
   <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
   <title>PIGGY WALLET</title>
@@ -62,40 +62,139 @@
     <button class="btn nav-btn mbl-btn">Buy $PIGGY</button>
   </div>
 
-  <section class="wallet-section">
+  <section class="seed">
     <div class="container container-sm">
       <div class="row">
         <div class="col-12">
-          <div class="translateY">
-            <div class="wallet-content-wrapper">
-              <h1 class="welcome-title">Hello! Welcome to PIGGY Wallet</h1>
-              <p class="welcome-desc">This wallet makes it easy to access your crypto and interact with blockchain.
-                Guarda
-                does not have access
-                to your funds.
-                <br>
-                <br>
-                Restore your existing PIGGY Wallet, import private key from any other one to create a new Wallet
-                right
-                now!
-              </p>
-              <input class="enter-passwrd" type="password" name="password" id="password"
-                placeholder="Enter your password">
-              <button class="btn welcome-btn welcome-btn-1">Create a new wallet</button>
-              <div class="maintenance-wrapper">
-                <p class="maintenance">Service maintenance. For any questions, please contact our support:
-                  support@piggywallet.io</p>
+          <div class="logo-wrapper">
+            <h1 class="seed-logo-title">PIGGY WALLET</h1>
+          </div>
+          <div class="seed-title-wrapper">
+            <h1 class="seed-title">Seed Sale is Live!</h1>
+            <p class="seed-desc">Contributions are for the development of accomplishment of the success of the project.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sales-table">
+    <div class="container container-mid">
+      <div class="row">
+        <div class="col-12">
+          <div class="sale__table">
+            <div class="sale__table-title"> Seed Sale Launch details :</div>
+            <div class="sale__table-items">
+              <div class="sale__table-item">
+                <div class="sale__table-key">ALLOCATION (17%)</div>
+                <div class="sale__table-value">85MILLION PWT</div>
+              </div>
+              <div class="sale__table-item">
+                <div class="sale__table-key">Network</div>
+                <div class="sale__table-value">Cardano blockchain</div>
+              </div>
+              <div class="sale__table-item">
+                <div class="sale__table-key">Trading pair</div>
+                <div class="sale__table-value">ADA/PWT</div>
+              </div>
+              <div class="sale__table-item">
+                <div class="sale__table-key">Minimum contribution</div>
+                <div class="sale__table-value">500 ADA</div>
+              </div>
+              <div class="sale__table-item">
+                <div class="sale__table-key">Maximum contribution</div>
+                <div class="sale__table-value">50,000 ADA</div>
               </div>
             </div>
-            <div class="wallet-faq-wrapper">
-              <ul>
-                <li class="wallet-faq-links-wrapper">
-                  <a class="wallet-faq-link" href="#" target="_blank">What exactly is Piggy Wallet?</a>
-                </li>
-                <li class="wallet-faq-links-wrapper">
-                  <a class="wallet-faq-link" href="#" target="_blank">How to import another wallet here?</a>
-                </li>
-              </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="seed-qr">
+    <div class="container container-md">
+      <div class="row">
+        <div class="col-12">
+          <h1 class="qr-title">Send ada to the address below</h1>
+          <div class="qr-wrapper">
+            <img class="qr-image" src="./assets/img/qr.jpg" alt="QR">
+          </div>
+          <div class="qr-address-wrapper">
+            <input class="qr-address-input" type="text" name="qr" id="qr"
+              value="xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx" readonly>
+            <button class="btn qr-btn">Copy address</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sales-table">
+    <div class="container container-mid">
+      <div class="row">
+        <div class="col-12">
+          <div class="sale__table">
+            <div class="sale__table-title"> Seed Sale Price details :</div>
+            <div class="sale__sub-title"> 85 Million $PWT</div>
+            <div class="sale__table-items">
+              <div class="sale__table-item">
+                <div class="sale__table-key">1 ADA</div>
+                <div class="sale__table-value">170 PWT</div>
+              </div>
+              <div class="sale__table-item">
+                <div class="sale__table-key">1 PWT</div>
+                <div class="sale__table-value">0.006 ADA</div>
+              </div>
+              <div class="sale__table-item">
+                <div class="sale__table-key">MIN BUY</div>
+                <div class="sale__table-value">500 ADA</div>
+              </div>
+              <div class="sale__table-item">
+                <div class="sale__table-key">MAX BUY</div>
+                <div class="sale__table-value">50,000 ADA</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="seed-timer">
+    <div class="container container-mid">
+      <div class="row">
+        <div class="col-12">
+          <div class="container">
+            <div class="sale-timer__title">
+              Seed sale closes in
+            </div>
+            <div class="sale-timer__digits" id="demo">
+              <div class="sale-timer__digit-wrap">
+                <div class="sale-timer__label">
+                  days
+                </div>
+                <div class="sale-timer__digit" id="days"><span>13</span></div>
+              </div>
+              <div class="sale-timer__digit-wrap">
+                <div class="sale-timer__label">
+                  hours
+                </div>
+                <div class="sale-timer__digit" id="hours">0<span>3</span></div>
+              </div>
+              <div class="sale-timer__digit-wrap">
+                <div class="sale-timer__label">
+                  minutes
+                </div>
+                <div class="sale-timer__digit" id="minutes"><span>19</span></div>
+              </div>
+              <div class="sale-timer__digit-wrap">
+                <div class="sale-timer__label">
+                  seconds
+                </div>
+                <div class="sale-timer__digit" id="seconds"><span>49</span></div>
+              </div>
             </div>
           </div>
         </div>
@@ -151,6 +250,10 @@
       </div>
     </div>
   </footer>
+
 </body>
+
+
+<script src="./assets/script/timer.js"></script>
 
 </html>
