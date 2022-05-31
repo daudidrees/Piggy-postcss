@@ -39,7 +39,6 @@
   padding-top: 70px;
   padding-bottom: 90px;
   background: #444548;
-  backdrop-filter: blur(30px);
   border-radius: 10px;
   border: 1px solid #fff;
   transition: all 0.2s;
@@ -209,4 +208,307 @@
 
 .sale-timer__digit span {
   color: #444548;
+}
+
+@media (max-width: 992px) {
+  .sale__table-items {
+    max-width: 670px;
+  }
+
+  .sale__table {
+    padding-top: 50px;
+  }
+
+  .sale-timer__digit-wrap {
+    margin-right: 30px;
+    width: 130px;
+  }
+  .sale-timer__digit {
+    font-size: 80px;
+  }
+}
+
+@media (max-width: 820px) {
+  .sale__table-items {
+    max-width: 600px;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .sale__table-items {
+    max-width: 500px;
+  }
+
+  .sale-timer__digit-wrap {
+    margin-right: 30px;
+    width: 110px;
+  }
+  .sale-timer__digit {
+    font-size: 72px;
+  }
+
+  .seed {
+    padding-top: 70px;
+    margin-bottom: 50px;
+  }
+
+  .sale__table {
+    padding-bottom: 50px;
+  }
+
+  .sale__table-key {
+    font-size: 18px;
+  }
+
+  .sale__table-value {
+    font-size: 18px;
+    font-weight: 700;
+  }
+
+  .sales-table,
+  .seed-qr {
+    margin-bottom: 70px;
+  }
+
+  .seed-timer {
+    padding: 70px 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .seed-timer {
+    padding-top: 20px;
+    padding-bottom: 70px;
+  }
+
+  .sale-timer__digit{
+    font-size: 45px;
+    line-height: 50px;
+  }
+
+  .sale-timer__label {
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 15px;
+  }
+
+  .sale-timer__digit-wrap {
+    width: 65px;
+  }
+
+  .sale-timer__title {
+    font-size: 24px;
+    line-height: 22px;
+    margin-bottom: 40px;
+  }
+
+  .sales-table {
+    margin-bottom: 50px;
+  }
+
+  .sale__table-items {
+    max-width: 450px;
+  }
+
+  .sale__sub-title {
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 30px;
+  }
+
+  .sale__table-title {
+    font-size: 24px;
+  }
+
+  .qr-address-wrapper {
+    max-width: 450px;
+  }
+
+  .qr-wrapper {
+    max-width: 180px;
+    max-height: 180px;
+    margin-bottom: 20px;
+  }
+
+  .qr-title {
+    font-size: 24px;
+  }
+
+  .seed {
+    padding-top: 50px;
+  }
+
+  .logo-wrapper {
+    margin-bottom: 20px;
+  }
+
+  .seed-logo-title {
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  .seed-title {
+    font-size: 24px;
+    line-height: 24px;
+  }
+
+  .seed-desc {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 550px) {
+  .sale__table-items {
+    max-width: 400px;
+  }
+}
+
+@media (max-width: 480px) {
+  .sale__table-key {
+    font-size: 16px;
+  }
+
+  .sale__table-value {
+    font-size: 16px;
+  }
+
+  .sale__table {
+    padding: 30px 0;
+  }
+
+  .sale__table-item {
+    padding: 10px 0;
+  }
+
+  .sale__table-items {
+    max-width: 350px;
+  }
+
+  .seed-timer {
+    padding-top: 0;
+  }
+
+  .sale-timer__title {
+    margin-bottom: 30px;
+  }
+
+  .sale__table-title-2 {
+    line-height: 24px;
+  }
+}
+
+@media (max-width: 440px) {
+  .sale__table-key {
+    font-size: 14px;
+  }
+
+  .sale__table-value {
+    font-size: 14px;
+  }
+
+  .sale__table {
+    padding: 30px 0;
+  }
+
+  .sale__table-item {
+    padding: 10px 0;
+  }
+
+  .sale__table-items {
+    max-width: 350px;
+  }
+
+  .seed-timer {
+    padding-top: 0;
+  }
+
+  .sale-timer__title {
+    margin-bottom: 30px;
+  }
+
+  .qr-address-input {
+    padding: 15px;
+  }
+
+  .qr-btn {
+    width: 200px;
+    height: 50px;
+    font-size: 18px;
+  }
+
+  .qr-wrapper {
+    max-width: 150px;
+    max-height: 150px;
+  }
+
+  .sale-timer__digit {
+    font-size: 36px;
+  }
+
+  .sale-timer__digit-wrap {
+    width: 50px;
+  }
+
+  .sale__sub-title {
+    margin-bottom: 25px;
+  }
+
+  .sale__table-items {
+    max-width: 310px;
+  }
+}
+
+@media (max-width: 400px) {
+
+  .sale__table-title {
+    font-size: 20px;
+  }
+
+  .sale__table-items {
+    max-width: 275px;
+  }
+
+  .sale__table-title {
+    line-height: 30px;
+  }
+
+  .seed-logo-title {
+    font-size: 30px;
+    line-height: 30px;
+  }
+
+  .logo-wrapper {
+    margin-bottom: 15px;
+  }
+
+  .seed-title {
+    font-size: 20px;
+    line-height: 20px;
+    margin-bottom: 10px;
+  }
+
+  .seed {
+    padding-top: 40px;
+    margin-bottom: 40px;
+  }
+
+  .qr-title {
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 20px;
+  }
+
+  .seed-qr {
+    margin-bottom: 50px;
+  }
+
+  .sale__table-title-2 {
+    margin-bottom: 10px;
+  }
+
+  .sale__sub-title {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
 }
