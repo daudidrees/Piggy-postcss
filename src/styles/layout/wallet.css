@@ -87,3 +87,14 @@
 .wallet-faq-link:hover {
   text-decoration: underline;
 }
+
+.enter-passwrd {
+  width: 100%;
+  padding: 15px 10px;
+  font-size: 16px;
+  outline: none;
+  margin-bottom: 15px;
+  border: none;
+  border-radius: 3px;
+  color: #000;
+}
