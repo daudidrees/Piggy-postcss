@@ -41,13 +41,10 @@
   background: #444548;
   border-radius: 10px;
   border: 1px solid #fff;
-  transition: all 0.2s;
+  min-height: 630px;
+  cursor: pointer;
 }
 
-.sale__table:hover {
-  box-shadow: 0px 8px 25px rgb(0 0 0 / 24%);
-  transform: translateY(-10px);
-}
 
 .sale__table-title {
   font-size: 34px;
@@ -58,7 +55,7 @@
 }
 
 .sale__table-items {
-  max-width: 841px;
+  max-width: 590px;
   margin: 0 auto;
 }
 
@@ -87,6 +84,10 @@
   text-align: right;
   text-transform: uppercase;
   color: #fff;
+}
+
+.sale__table-title-1 {
+  margin-bottom: 50px;
 }
 
 .qr-title {
@@ -201,13 +202,46 @@
   font-size: 96px;
   line-height: 104px;
   margin-top: 13px;
-  color: #444548;
+  color: #fff;
   text-align: center;
   text-transform: uppercase;
 }
 
 .sale-timer__digit span {
-  color: #444548;
+  color: #fff;
+}
+
+@media (max-width: 1440px) {
+  .sale__table-items {
+    max-width: 550px;
+  }
+}
+
+@media (max-width: 1280px) {
+  .sale__table-items {
+    max-width: 400px;
+  }
+
+  .sale__table {
+    min-height: 650px;
+  }
+}
+
+@media (max-width: 1024px) {
+
+  .table-col {
+    margin-bottom: 50px;
+  }
+
+  .sale__table-items {
+    max-width: 650px;
+  }
+
+  .sale__table {
+    min-height: 100%;
+    max-width: 90%;
+    margin: 0 auto;
+  }
 }
 
 @media (max-width: 992px) {
@@ -217,6 +251,7 @@
 
   .sale__table {
     padding-top: 50px;
+    max-width: 100%;
   }
 
   .sale-timer__digit-wrap {
