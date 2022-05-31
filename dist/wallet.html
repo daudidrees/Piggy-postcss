@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./styles/index.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+  <title>PIGGY</title>
+</head>
+
+<body>
+  <nav id="nav" class="nav desktop-nav">
+    <div class="nav-container container-xxl">
+      <ul class="nav-logo">
+        <li class="nav-logo-wrapper">
+          <a href="./index.html"><img src="./assets/img/Logo.svg" alt="LOGO"></a>
+        </li>
+      </ul>
+      <ul class="nav-links">
+        <li class="nav-link"><a class="nav-item" href="#overview">Overview</a></li>
+        <li class="nav-link"><a class="nav-item" href="#security">Security</a></li>
+        <li class="nav-link"><a class="nav-item" href="#tokenomics">Tokenomics</a></li>
+        <li class="nav-link"><a class="nav-item" href="#wallet">Wallet</a></li>
+        <li class="nav-link"><a class="nav-item" href="#team">Team</a></li>
+        <button class="btn nav-btn">Buy $PIGGY</button>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Mobile Nav -->
+
+  <nav id="nav" class="nav mbl-hamburger">
+    <div class="nav-container container-xxl">
+      <ul class="nav-logo">
+        <li class="nav-logo-wrapper">
+          <a href="#"><img src="./assets/img/Logo.svg" alt="LOGO"></a>
+        </li>
+      </ul>
+      <ul>
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+      </ul>
+    </div>
+  </nav>
+
+  <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <li class="nav-link"><a class="nav-item" href="#overview">Overview</a></li>
+    <li class="nav-link"><a class="nav-item" href="#security">Security</a></li>
+    <li class="nav-link"><a class="nav-item" href="#tokenomics">Tokenomics</a></li>
+    <li class="nav-link"><a class="nav-item" href="#wallet">Wallet</a></li>
+    <li class="nav-link"><a class="nav-item" href="#team">Team</a></li>
+    <button class="btn nav-btn mbl-btn">Buy $PIGGY</button>
+  </div>
+
+  <section class="wallet-section">
+    <div class="container container-sm">
+      <div class="row">
+        <div class="col-12">
+          <div class="translateY">
+            <div class="wallet-content-wrapper">
+              <h1 class="welcome-title">Hello! Welcome to PIGGY Wallet</h1>
+              <p class="welcome-desc">This wallet makes it easy to access your crypto and interact with blockchain.
+                Guarda
+                does not have access
+                to your funds.
+                <br>
+                <br>
+                Restore your existing PIGGY Wallet, import private key from any other one to create a new Wallet
+                right
+                now!
+              </p>
+              <button class="btn welcome-btn welcome-btn-1">Creat a new wallet</button>
+              <button class="btn welcome-btn welcome-btn-2">Report or import</button>
+              <div class="maintenance-wrapper">
+                <p class="maintenance">Service maintenance. For any questions, please contact our support:
+                  support@piggywallet.io</p>
+              </div>
+            </div>
+            <div class="wallet-faq-wrapper">
+              <ul>
+                <li class="wallet-faq-links-wrapper">
+                  <a class="wallet-faq-link" href="#" target="_blank">What exactly is Piggy Wallet?</a>
+                </li>
+                <li class="wallet-faq-links-wrapper">
+                  <a class="wallet-faq-link" href="#" target="_blank">How to import another wallet here?</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer" id="footer">
+    <div class="container container-xxl">
+      <div class="footer__top--content">
+        <div class="footer__logo">
+          <img src="assets/img/footer-logo.png" class="footer__logo--img">
+        </div>
+        <div class="footer__text">
+          <p class="footer__para">A non-custodial smart wallet and gateway to DApps on Cardano.</p>
+        </div>
+      </div>
+      <div class="footer__showcase">
+        <div class="footer__social--info">
+          <div class="footer__social--links">
+            <a href="https://twitter.com/piggy_wallet" target="_blank"><img src="./assets/media/twitter.svg"
+                class="social-img"></a>
+            <a href="https://piggywallet.medium.com/" target="_blank"><img src="./assets/media/medium.svg"
+                class="social-img"></a>
+            <a href="https://t.me/piggy_wallet" target="_blank"><img src="./assets/media/telegram.svg"
+                class="social-img"></a>
+            <a href="https://www.facebook.com/PIGGY-Wallet-105688362138177" target="_blank"><img
+                src="./assets/media/facebook.svg" class="social-img"></a>
+          </div>
+          <div class="footer__contact">
+            <p class="footer__email fe-mb-19">Contact Us : support@piggywallet.io</p>
+            <p class="footer__email">We're Hiring : career@piggywallet.io</p>
+          </div>
+        </div>
+        <div class="footer__nav">
+          <ul class="footer__nav--links">
+            <li class="footer__nav-link"><a href="https://admin-215.gitbook.io/piggy-wallet-gitbook/"
+                target="_blank">Docs</a></li>
+            <li class="footer__nav-link"><a href="#tokenomics">Tokenomics</a></li>
+            <li class="footer__nav-link"><a href="#roadmap">Roadmap</a></li>
+            <li class="footer__nav-link"><a href="./assets/pdf/Piggy-Wallet-WhitePaper.pdf"
+                target="_blank">Whitepaper</a></li>
+            <li class="footer__nav-link"><a href="#faq">FAQs</a></li>
+          </ul>
+          <ul class="footer__nav--links fnl-mb-0">
+            <li class="footer__nav-link"><a href="#wallet">Wallet</a></li>
+            <li class="footer__nav-link"><a href="#team">Team</a></li>
+            <li class="footer__nav-link"><a href="https://github.com/piggywallet" target="_blank">Github</a>
+            </li>
+            <li class="footer__nav-link"><a href="#"><span>Buy $PIGGY</span></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>

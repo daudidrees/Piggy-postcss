@@ -1,7 +1,7 @@
 {
   "name": "piggy-postcss",
   "version": "1.0.0",
-  "description": "",
+  "description": "This is a brand new website for Piggy Wallet",
   "main": "index.js",
   "scripts": {
     "start": "npm run watch",
