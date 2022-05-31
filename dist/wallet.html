@@ -73,15 +73,15 @@
                 Guarda
                 does not have access
                 to your funds.
-                <br>
+                <br class="break-1">
                 <br>
                 Restore your existing PIGGY Wallet, import private key from any other one to create a new Wallet
                 right
                 now!
               </p>
-              <input class="enter-passwrd" type="password" name="password" id="password"
-                placeholder="Enter your password">
-              <button class="btn welcome-btn welcome-btn-1">Create a new wallet</button>
+              <!-- <input class="enter-passwrd" type="password" name="password" id="password"
+                placeholder="Enter your password"> -->
+              <button class="btn welcome-btn welcome-btn-1 createAccBtn">Create a new wallet</button>
               <div class="maintenance-wrapper">
                 <p class="maintenance">Service maintenance. For any questions, please contact our support:
                   support@piggywallet.io</p>
@@ -151,8 +151,54 @@
       </div>
     </div>
   </footer>
+
+  <div class="modal hidden">
+    <button class="btn--close-modal">&times;</button>
+    <h2 class="modal__header"> Enter Your Details</h2>
+    <form class="modal__form">
+      <label>Email Address</label>
+      <input type="email" name="email" id="email">
+      <label>Password</label>
+      <input type="password" name="password" id="password">
+      <button class="wallet-form-btn">Sign up &rarr;</button>
+    </form>
+  </div>
+  <div class="overlay hidden"></div>
+
 </body>
 
 <script src="./assets/script/script.js"></script>
+
+<script>
+  const modal = document.querySelector('.modal');
+  const openModal = document.querySelector('.createAccBtn');
+  const closeModal = document.querySelector('.btn--close-modal')
+  const overlay = document.querySelector('.overlay')
+
+  openModal.addEventListener('click', function () {
+    modal.classList.remove('hidden');
+    overlay.classList.remove('hidden');
+  });
+
+  closeModal.addEventListener('click', function () {
+    modal.classList.add('hidden');
+    overlay.classList.add('hidden');
+  });
+
+  overlay.addEventListener('click', function () {
+    modal.classList.add('hidden');
+    overlay.classList.add('hidden');
+  });
+
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape') {
+      if (!e.target.classList.contains('hidden')) {
+        modal.classList.add('hidden');
+        overlay.classList.add('hidden');
+      }
+    }
+  })
+
+</script>
 
 </html>
