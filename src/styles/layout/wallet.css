@@ -188,6 +188,39 @@
   cursor: pointer;
 }
 
+.modal__form input::placeholder {
+  font-size: 1rem;
+}
+
+@media (max-width: 768px) {
+  .modal {
+    width: 90%;
+    max-width: 100%;
+    padding: 3rem 2rem;
+  }
+
+  .modal__header {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+
+  .modal__form {
+    margin: 0;
+    grid-template-columns: 1fr auto;
+    gap: 1rem;
+  }
+
+  .modal__form input {
+    width: 100%;
+    font-size: 1.7rem;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 0.5rem;
+    outline: none;
+  }
+}
+
 
 @media (max-width: 600px) {
 
@@ -209,6 +242,43 @@
     font-size: 16px;
     line-height: 20px;
     margin: 0 0 30px 0;
+  }
+
+  .modal__form label {
+    font-size: 1rem;
+    font-weight: 500;
+  }
+
+  .modal__form input {
+    padding: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .modal {
+    padding: 2rem 1rem;
+  }
+
+  .modal__form {
+    margin: 0;
+    grid-column: 1 / 9;
+    gap: 1rem;
+  }
+
+  .modal__header {
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+
+  .btn--close-modal {
+    top: 0rem;
+    right: 1rem;
+  }
+
+  .wallet-form-btn {
+    padding: 16px 40px;
+    line-height: 19.57px;
   }
 }
 
