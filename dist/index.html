@@ -30,7 +30,7 @@
         <li class="nav-link"><a class="nav-item" href="#overview">Overview</a></li>
         <li class="nav-link"><a class="nav-item" href="#security">Security</a></li>
         <li class="nav-link"><a class="nav-item" href="#tokenomics">Tokenomics</a></li>
-        <li class="nav-link"><a class="nav-item" href="#wallet">Wallet</a></li>
+        <li class="nav-link"><a class="nav-item" href="./wallet.html">Wallet</a></li>
         <li class="nav-link"><a class="nav-item" href="#team">Team</a></li>
         <button class="btn nav-btn">Buy $PIGGY</button>
       </ul>
@@ -57,7 +57,7 @@
     <li class="nav-link"><a class="nav-item" href="#overview">Overview</a></li>
     <li class="nav-link"><a class="nav-item" href="#security">Security</a></li>
     <li class="nav-link"><a class="nav-item" href="#tokenomics">Tokenomics</a></li>
-    <li class="nav-link"><a class="nav-item" href="#wallet">Wallet</a></li>
+    <li class="nav-link"><a class="nav-item" href="./wallet.html">Wallet</a></li>
     <li class="nav-link"><a class="nav-item" href="#team">Team</a></li>
     <button class="btn nav-btn mbl-btn">Buy $PIGGY</button>
   </div>
@@ -1223,5 +1223,35 @@
   });
 </script>
 <script src="./assets/script/script.js"></script>
+
+<script>
+
+  const circleChart = document.getElementById('circle-chart')
+  const circleChartCircles = document.querySelectorAll('[data-chart-circle]')
+
+  const observer = new IntersectionObserver((entries, observer) => {
+    const [{ isIntersecting, target }] = entries
+
+    if (isIntersecting && target === circleChart) {
+      observer.disconnect()
+      circleChartCircles.forEach(circle => {
+        circle.setAttribute('stroke-dasharray', circle.getAttribute('data-chart-dasharray'))
+      })
+    }
+  }, {
+    threshold: 0.3
+  })
+
+  observer.observe(circleChart);
+
+
+  const about = document.getElementById('footer')
+  const learnMore = document.getElementById('join')
+
+  learnMore.addEventListener("click", function (e) {
+    e.preventDefault();
+    about.scrollIntoView({ behavior: "smooth" })
+  });
+</script>
 
 </html>

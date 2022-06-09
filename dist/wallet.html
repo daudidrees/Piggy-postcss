@@ -43,7 +43,7 @@
     <div class="nav-container container-xxl">
       <ul class="nav-logo">
         <li class="nav-logo-wrapper">
-          <a href="#"><img src="./assets/img/Logo.svg" alt="LOGO"></a>
+          <a href="./index.html"><img src="./assets/img/Logo.svg" alt="LOGO"></a>
         </li>
       </ul>
       <ul>
@@ -69,15 +69,7 @@
           <div class="translateY">
             <div class="wallet-content-wrapper">
               <h1 class="welcome-title">Hello! Welcome to PIGGY Wallet</h1>
-              <p class="welcome-desc">This wallet makes it easy to access your crypto and interact with blockchain.
-                Guarda
-                does not have access
-                to your funds.
-                <br class="break-1">
-                <br>
-                Restore your existing PIGGY Wallet, import private key from any other one to create a new Wallet
-                right
-                now!
+              <p class="welcome-desc">Your gate way to DApps and the financial world.
               </p>
               <!-- <input class="enter-passwrd" type="password" name="password" id="password"
                 placeholder="Enter your password"> -->
@@ -157,9 +149,9 @@
     <h2 class="modal__header"> Enter Your Details</h2>
     <form class="modal__form">
       <label>Email</label>
-      <input type="email" name="email" id="email">
+      <input type="email" name="email" id="email" class="input-field" required>
       <label>Password</label>
-      <input type="password" name="password" id="password">
+      <input type="password" name="password" id="password" class="password" required>
       <button class="wallet-form-btn">Sign up &rarr;</button>
     </form>
   </div>
@@ -196,6 +188,17 @@
         modal.classList.add('hidden');
         overlay.classList.add('hidden');
       }
+    }
+  });
+
+  const input = document.querySelector('.input-field')
+  const password = document.querySelector('.password')
+
+  document.querySelector('.wallet-form-btn').addEventListener('click', function (e) {
+    e.preventDefault();
+    console.log(input.value, password.value);
+    if (input.value.length !== 0 && password.value.length !== 0) {
+      window.location = './innerWallet.html'
     }
   })
 

@@ -9,33 +9,7 @@ const hamburger = document.querySelector(".hamburger-icon");
 const mblNav = document.querySelector('.mobile-nav')
 const navCross = document.querySelector('.nav-cross-btn')
 
-const circleChart = document.getElementById('circle-chart')
-const circleChartCircles = document.querySelectorAll('[data-chart-circle]')
-
-const observer = new IntersectionObserver((entries, observer) => {
-  const [{ isIntersecting, target }] = entries
-
-  if (isIntersecting && target === circleChart) {
-    observer.disconnect()
-    circleChartCircles.forEach(circle => {
-      circle.setAttribute('stroke-dasharray', circle.getAttribute('data-chart-dasharray'))
-    })
-  }
-}, {
-  threshold: 0.3
-})
-
-observer.observe(circleChart)
-
-document.querySelector('.nav-links').addEventListener('click', function(e) {
-  e.preventDefault();
-  if(e.target.classList.contains('nav-item')){
-    const id = e.target.getAttribute("href");
-    document.querySelector(id).scrollIntoView({behavior: "smooth"})
-  }
-});
-
-function hideAllFaqs (faqs) {
+function hideAllFaqs(faqs) {
   faqs.forEach(faq => {
     faq.lastElementChild.textContent = '+'
     faq.nextElementSibling.classList.remove('show')
@@ -64,7 +38,7 @@ personContent.forEach((personEl, index) => {
 
     if (!personDescMobileEl || !personDescDesktopEl) return
 
-   if (!personDescDesktopEl.classList.contains('hidden')) {
+    if (!personDescDesktopEl.classList.contains('hidden')) {
       personDescMobileEl.classList.add('hidden')
       personDescDesktopEl.classList.add('hidden')
     } else {
@@ -89,21 +63,7 @@ function closeNav() {
 
 // Mbl-Nav
 
-document.querySelector('.sidenav').addEventListener('click', function(e) {
-  e.preventDefault();
-  if(e.target.classList.contains('nav-item')){
-    const mblNav = e.target.getAttribute("href");
-    document.querySelector(mblNav).scrollIntoView({behavior: "smooth"});
-    document.getElementById("mySidenav").style.width = "0";
-    document.getElementById("main").style.marginLeft = "0";
-  }
-});
-
-
-const about = document.getElementById('footer')
-const learnMore = document.getElementById('join')
-
-learnMore.addEventListener("click", function (e) {
-  e.preventDefault();
-  about.scrollIntoView({behavior: "smooth"})
+document.querySelector('.sidenav').addEventListener('click', function (e) {
+  document.getElementById("mySidenav").style.width = "0";
+  document.getElementById("main").style.marginLeft = "0";
 });
