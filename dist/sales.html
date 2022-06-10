@@ -250,4 +250,14 @@
 <script src="./assets/script/timer.js"></script>
 <script src="./assets/script/script.js"></script>
 
+<script>
+  const myInp = document.getElementById('qr');
+  const copyBtn = document.querySelector('.qr-btn');
+
+  copyBtn.addEventListener('click', function () {
+    myInp.select();
+    document.execCommand('Copy');
+  });
+</script>
+
 </html>
