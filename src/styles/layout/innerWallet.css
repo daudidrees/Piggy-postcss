@@ -112,7 +112,7 @@
 }
 
 .cardano,
-.piggy {
+.piggy-currency {
   padding: 25px;
   max-width: calc(100% - 478px);
   align-content: center;
@@ -169,19 +169,19 @@
 }
 
 @media (max-width: 1280px) {
-  .cardano, .piggy {
+  .cardano, .piggy-currency {
     max-width: calc(100% - 420px);
   }
 }
 
 @media (max-width: 992px) {
-  .cardano, .piggy {
+  .cardano, .piggy-currency {
     max-width: calc(100% - 220px);
   }
 }
 
 @media (max-width: 820px) {
-  .cardano, .piggy {
+  .cardano, .piggy-currency {
     max-width: calc(100%);
   }
 
@@ -229,7 +229,7 @@
     font-size: 18px;
   }
 
-  .cardano, .piggy {
+  .cardano, .piggy-currency {
     padding-left: 20px;
     padding-right: 20px;
   }
@@ -270,7 +270,7 @@
     padding: 10px 15px;
   }
 
-  .cardano, .piggy {
+  .cardano, .piggy-currency {
     padding: 15px;
   }
 
