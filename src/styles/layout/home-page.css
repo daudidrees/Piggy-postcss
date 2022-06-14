@@ -603,14 +603,20 @@ body {
 }
 
 .btn-wallet {
-  padding: 24px 19px;
+  padding: 19.5px 19px;
   background: #131325;
   border-radius: 0;
 }
 
 .btn-wallet-logo {
-  padding: 33.5px 130px;
+  padding: 29.75px 107px;
   background: #4262d3;
+  border-radius: 0;
+}
+
+.btn-wallet-2 {
+  padding: 24px 70px;
+  background: #131325;
   border-radius: 0;
 }
 
@@ -1382,6 +1388,14 @@ body {
     top: -31%;
     left: 35%;
   }
+
+  .btn-wallet {
+    padding: 24.5px 19px;
+  }
+
+  .btn-wallet-2 {
+    padding: 40px 130px;
+  }
 }
 
 @media screen and (max-width: 992px) {
@@ -1481,6 +1495,10 @@ body {
 
   .btn-wallet-logo img {
     width: 125px;
+  }
+
+  .btn-wallet-2 {
+    padding: 24px 92px;
   }
 }
 
@@ -1676,10 +1694,6 @@ body {
 
   .faq-btn {
     font-size: 40px;
-  }
-
-  .btn-wallet {
-    margin: 0 0 20px 0;
   }
 
   .person__img {
@@ -1931,6 +1945,10 @@ body {
   .team-break {
     display: none !important;
   } */
+
+  .btn-wallet-2 {
+    padding: 24px 67px;
+  }
 }
 
 @media (max-width: 596px) {
