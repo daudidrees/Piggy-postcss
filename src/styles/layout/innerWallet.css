@@ -287,3 +287,22 @@
     font-size: 16px;
   }
 }
+
+.hidden-coming-soon-msg {
+  display: none;
+}
+
+.coming-soon-message-wrapper {
+  margin-top: 20px;
+  padding: 14px;
+  text-align: center;
+  background: rgba(229, 57, 53, 0.1);
+}
+
+.messagedisplay {
+  color: #ababac;
+  font-size: 14px;
+  line-height: 20px;
+  width: 100%;
+  padding: 0px 16px;
+}

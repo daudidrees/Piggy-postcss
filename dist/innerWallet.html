@@ -54,11 +54,11 @@
 
   <div id="mySidenav" class="sidenav">
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-    <li class="nav-link"><a class="nav-item" href="#overview">Overview</a></li>
-    <li class="nav-link"><a class="nav-item" href="#security">Security</a></li>
-    <li class="nav-link"><a class="nav-item" href="#tokenomics">Tokenomics</a></li>
+    <li class="nav-link"><a class="nav-item" href="./index.html#overview">Overview</a></li>
+    <li class="nav-link"><a class="nav-item" href="./index.html#security">Security</a></li>
+    <li class="nav-link"><a class="nav-item" href="./index.html#tokenomics">Tokenomics</a></li>
     <li class="nav-link"><a class="nav-item" href="./wallet.html">Wallet</a></li>
-    <li class="nav-link"><a class="nav-item" href="#team">Team</a></li>
+    <li class="nav-link"><a class="nav-item" href="./index.html#team">Team</a></li>
     <button class="btn nav-btn mbl-btn">Buy $PIGGY</button>
   </div>
 
@@ -77,7 +77,7 @@
       <div class="row">
         <div class="col-12 ds-flex">
           <div class="balance-wrapper">
-            <h1 class="balance-title">$8,771.25 <span class="balance-rating"> 26.9%</span></h1>
+            <h1 class="balance-title">$0<span class="balance-rating"> 26.9%</span></h1>
             <p class="current-balance">Current Balance</p>
             <div class="wallet-btn-wrapper">
               <button class="btn innerwallet-btn">Buy</button>
@@ -85,9 +85,14 @@
               <button class="btn innerwallet-btn">Receive</button>
               <button class="btn innerwallet-btn">Swap</button>
             </div>
+
+            <div class="coming-soon-message-wrapper hidden-coming-soon-msg">
+              <p class="messagedisplay">Coming Soon</p>
+            </div>
+
           </div>
           <div class="wallet-status-wrapper">
-            <h1 class="customer-name">Good Evening, Mooed</h1>
+            <h1 class="customer-name">Good Evening, <span id="user-name">Mooed</span></h1>
             <div class="customer-wrapper">
               <div class="costumer-id-wrapper">
                 <p class="customer-id">Customer ID</p>
@@ -206,15 +211,15 @@
           <ul class="footer__nav--links">
             <li class="footer__nav-link"><a href="https://admin-215.gitbook.io/piggy-wallet-gitbook/"
                 target="_blank">Docs</a></li>
-            <li class="footer__nav-link"><a href="#tokenomics">Tokenomics</a></li>
-            <li class="footer__nav-link"><a href="#roadmap">Roadmap</a></li>
+            <li class="footer__nav-link"><a href="./index.html#tokenomics">Tokenomics</a></li>
+            <li class="footer__nav-link"><a href="./index.html#roadmap">Roadmap</a></li>
             <li class="footer__nav-link"><a href="./assets/pdf/Piggy-Wallet-WhitePaper.pdf"
                 target="_blank">Whitepaper</a></li>
-            <li class="footer__nav-link"><a href="#faq">FAQs</a></li>
+            <li class="footer__nav-link"><a href="./index.html#faq">FAQs</a></li>
           </ul>
           <ul class="footer__nav--links fnl-mb-0">
             <li class="footer__nav-link"><a href="./wallet.html">Wallet</a></li>
-            <li class="footer__nav-link"><a href="#team">Team</a></li>
+            <li class="footer__nav-link"><a href="./index.html#team">Team</a></li>
             <li class="footer__nav-link"><a href="https://github.com/piggywallet" target="_blank">Github</a>
             </li>
             <li class="footer__nav-link"><a href="#"><span>Buy $PIGGY</span></a></li>
@@ -229,5 +234,20 @@
 
 <script src="./assets/script/timer.js"></script>
 <script src="./assets/script/script.js"></script>
+
+<script>
+  const accountBtn = document.querySelectorAll('.innerwallet-btn');
+  const comingSoon = document.querySelector('.coming-soon-message-wrapper');
+
+  accountBtn.forEach(element => {
+    element.addEventListener('click', function () {
+      comingSoon.classList.remove('hidden-coming-soon-msg');
+      setTimeout(() => {
+        comingSoon.classList.add('hidden-coming-soon-msg');
+      }, 5000);
+    })
+  });
+
+</script>
 
 </html>

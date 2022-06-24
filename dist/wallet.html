@@ -27,11 +27,11 @@
         </li>
       </ul>
       <ul class="nav-links">
-        <li class="nav-link"><a class="nav-item" href="#overview">Overview</a></li>
-        <li class="nav-link"><a class="nav-item" href="#security">Security</a></li>
-        <li class="nav-link"><a class="nav-item" href="#tokenomics">Tokenomics</a></li>
-        <li class="nav-link"><a class="nav-item" href="#wallet">Wallet</a></li>
-        <li class="nav-link"><a class="nav-item" href="#team">Team</a></li>
+        <li class="nav-link"><a class="nav-item" href="./index.html#overview">Overview</a></li>
+        <li class="nav-link"><a class="nav-item" href="./index.html#security">Security</a></li>
+        <li class="nav-link"><a class="nav-item" href="./index.html#tokenomics">Tokenomics</a></li>
+        <li class="nav-link"><a class="nav-item" href="#">Wallet</a></li>
+        <li class="nav-link"><a class="nav-item" href="./index.html#team">Team</a></li>
         <button class="btn nav-btn">Buy $PIGGY</button>
       </ul>
     </div>
@@ -54,11 +54,11 @@
 
   <div id="mySidenav" class="sidenav">
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-    <li class="nav-link"><a class="nav-item" href="#overview">Overview</a></li>
-    <li class="nav-link"><a class="nav-item" href="#security">Security</a></li>
-    <li class="nav-link"><a class="nav-item" href="#tokenomics">Tokenomics</a></li>
+    <li class="nav-link"><a class="nav-item" href="./index.html#overview">Overview</a></li>
+    <li class="nav-link"><a class="nav-item" href="./index.html#security">Security</a></li>
+    <li class="nav-link"><a class="nav-item" href="./index.html#tokenomics">Tokenomics</a></li>
     <li class="nav-link"><a class="nav-item" href="#wallet">Wallet</a></li>
-    <li class="nav-link"><a class="nav-item" href="#team">Team</a></li>
+    <li class="nav-link"><a class="nav-item" href="./index.html#team">Team</a></li>
     <button class="btn nav-btn mbl-btn">Buy $PIGGY</button>
   </div>
 
@@ -73,7 +73,9 @@
               </p>
               <!-- <input class="enter-passwrd" type="password" name="password" id="password"
                 placeholder="Enter your password"> -->
-              <button class="btn welcome-btn welcome-btn-1 createAccBtn">Create a new wallet</button>
+              <button class="btn welcome-btn welcome-btn-2 createAccBtn">Import wallet</button>
+              <button id="createwalletAcc" class="btn welcome-btn welcome-btn-1 createAccBtn">Create a new
+                wallet</button>
               <div class="maintenance-wrapper">
                 <p class="maintenance">Service maintenance. For any questions, please contact our support:
                   support@piggywallet.io</p>
@@ -126,15 +128,15 @@
           <ul class="footer__nav--links">
             <li class="footer__nav-link"><a href="https://admin-215.gitbook.io/piggy-wallet-gitbook/"
                 target="_blank">Docs</a></li>
-            <li class="footer__nav-link"><a href="#tokenomics">Tokenomics</a></li>
-            <li class="footer__nav-link"><a href="#roadmap">Roadmap</a></li>
+            <li class="footer__nav-link"><a href="./index.html#tokenomics">Tokenomics</a></li>
+            <li class="footer__nav-link"><a href="./index.html#roadmap">Roadmap</a></li>
             <li class="footer__nav-link"><a href="./assets/pdf/Piggy-Wallet-WhitePaper.pdf"
                 target="_blank">Whitepaper</a></li>
-            <li class="footer__nav-link"><a href="#faq">FAQs</a></li>
+            <li class="footer__nav-link"><a href="./index.html#faq">FAQs</a></li>
           </ul>
           <ul class="footer__nav--links fnl-mb-0">
             <li class="footer__nav-link"><a href="./wallet.html">Wallet</a></li>
-            <li class="footer__nav-link"><a href="#team">Team</a></li>
+            <li class="footer__nav-link"><a href="./index.html#team">Team</a></li>
             <li class="footer__nav-link"><a href="https://github.com/piggywallet" target="_blank">Github</a>
             </li>
             <li class="footer__nav-link"><a href="#"><span>Buy $PIGGY</span></a></li>
@@ -148,11 +150,13 @@
     <button class="btn--close-modal">&times;</button>
     <h2 class="modal__header"> Enter Your Details</h2>
     <form class="modal__form">
+      <label>User name</label>
+      <input type="text" name="text" id="text" class="input-field" required>
       <label>Email</label>
       <input type="email" name="email" id="email" class="input-field" required>
       <label>Password</label>
       <input type="password" name="password" id="password" class="password" required>
-      <button class="wallet-form-btn">Sign up &rarr;</button>
+      <button type="submit" class="wallet-form-btn">Create wallet</button>
     </form>
   </div>
   <div class="overlay hidden"></div>
@@ -163,7 +167,7 @@
 
 <script>
   const modal = document.querySelector('.modal');
-  const openModal = document.querySelector('.createAccBtn');
+  const openModal = document.querySelector('#createwalletAcc');
   const closeModal = document.querySelector('.btn--close-modal')
   const overlay = document.querySelector('.overlay')
 
@@ -196,9 +200,13 @@
 
   document.querySelector('.wallet-form-btn').addEventListener('click', function (e) {
     e.preventDefault();
-    console.log(input.value, password.value);
     if (input.value.length !== 0 && password.value.length !== 0) {
-      window.location = './innerWallet.html'
+      window.open(
+        './innerWallet.html', '_newtab');
+      modal.classList.add('hidden');
+      overlay.classList.add('hidden');
+      input.value = ''
+      password.value = ''
     }
   })
 
