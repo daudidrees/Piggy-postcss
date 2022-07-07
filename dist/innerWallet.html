@@ -32,7 +32,7 @@
         <li class="nav-link"><a class="nav-item" href="#tokenomics">Tokenomics</a></li>
         <li class="nav-link"><a class="nav-item" href="./wallet.html">Wallet</a></li>
         <li class="nav-link"><a class="nav-item" href="#team">Team</a></li>
-        <button class="btn nav-btn">Buy $PIGGY</button>
+        <a href="sales.html"><button class="btn nav-btn">Buy $PIGGY</button></a>
       </ul>
     </div>
   </nav>
@@ -59,7 +59,7 @@
     <li class="nav-link"><a class="nav-item" href="./index.html#tokenomics">Tokenomics</a></li>
     <li class="nav-link"><a class="nav-item" href="./wallet.html">Wallet</a></li>
     <li class="nav-link"><a class="nav-item" href="./index.html#team">Team</a></li>
-    <button class="btn nav-btn mbl-btn">Buy $PIGGY</button>
+    <a href="sales.html"><button class="btn nav-btn mbl-btn">Buy $PIGGY</button></a>
   </div>
 
   <section class="welcome">
@@ -145,11 +145,11 @@
                 </div>
               </div>
               <div class="graph-wrapper">
-                <p class="graph">Graph📈</p>
+                <p class="graph">📈</p>
               </div>
               <div class="coverter-wrapper">
-                <p class="deposit-balance">$6,560.21</p>
-                <p class="converted-currency">3801 ADA</p>
+                <p class="deposit-balance">$0</p>
+                <p class="converted-currency">0 ADA</p>
               </div>
             </div>
           </div>
@@ -166,11 +166,11 @@
                 </div>
               </div>
               <div class="graph-wrapper">
-                <p class="graph">Graph📈</p>
+                <p class="graph">📈</p>
               </div>
               <div class="coverter-wrapper">
-                <p class="deposit-balance">$22,11.04</p>
-                <p class="converted-currency">44,220.08 PWT</p>
+                <p class="deposit-balance">$0</p>
+                <p class="converted-currency">0 PWT</p>
               </div>
             </div>
           </div>
@@ -218,11 +218,11 @@
             <li class="footer__nav-link"><a href="./index.html#faq">FAQs</a></li>
           </ul>
           <ul class="footer__nav--links fnl-mb-0">
-            <li class="footer__nav-link"><a href="./wallet.html">Wallet</a></li>
+            <li class="footer__nav-link"><a target="_blank" href="./wallet.html">Wallet</a></li>
             <li class="footer__nav-link"><a href="./index.html#team">Team</a></li>
             <li class="footer__nav-link"><a href="https://github.com/piggywallet" target="_blank">Github</a>
             </li>
-            <li class="footer__nav-link"><a href="#"><span>Buy $PIGGY</span></a></li>
+            <li class="footer__nav-link"><a href="sales.html"><span>Buy $PIGGY</span></a></li>
           </ul>
         </div>
       </div>
@@ -247,6 +247,8 @@
       }, 5000);
     })
   });
+
+  const customerID = document.getElementById('user-name').innerHTML = localStorage.getItem('textvalue');
 
 </script>
 

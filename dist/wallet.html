@@ -32,7 +32,7 @@
         <li class="nav-link"><a class="nav-item" href="./index.html#tokenomics">Tokenomics</a></li>
         <li class="nav-link"><a class="nav-item" href="#">Wallet</a></li>
         <li class="nav-link"><a class="nav-item" href="./index.html#team">Team</a></li>
-        <button class="btn nav-btn">Buy $PIGGY</button>
+        <a href="sales.html"><button class="btn nav-btn">Buy $PIGGY</button></a>
       </ul>
     </div>
   </nav>
@@ -59,7 +59,7 @@
     <li class="nav-link"><a class="nav-item" href="./index.html#tokenomics">Tokenomics</a></li>
     <li class="nav-link"><a class="nav-item" href="#wallet">Wallet</a></li>
     <li class="nav-link"><a class="nav-item" href="./index.html#team">Team</a></li>
-    <button class="btn nav-btn mbl-btn">Buy $PIGGY</button>
+    <a href="sales.html"><button class="btn nav-btn mbl-btn">Buy $PIGGY</button></a>
   </div>
 
   <section class="wallet-section">
@@ -135,11 +135,11 @@
             <li class="footer__nav-link"><a href="./index.html#faq">FAQs</a></li>
           </ul>
           <ul class="footer__nav--links fnl-mb-0">
-            <li class="footer__nav-link"><a href="./wallet.html">Wallet</a></li>
+            <li class="footer__nav-link"><a target="_blank" href="./wallet.html">Wallet</a></li>
             <li class="footer__nav-link"><a href="./index.html#team">Team</a></li>
             <li class="footer__nav-link"><a href="https://github.com/piggywallet" target="_blank">Github</a>
             </li>
-            <li class="footer__nav-link"><a href="#"><span>Buy $PIGGY</span></a></li>
+            <li class="footer__nav-link"><a href="sales.html"><span>Buy $PIGGY</span></a></li>
           </ul>
         </div>
       </div>
@@ -149,9 +149,9 @@
   <div class="modal hidden">
     <button class="btn--close-modal">&times;</button>
     <h2 class="modal__header"> Enter Your Details</h2>
-    <form class="modal__form">
+    <form class="modal__form" action="#">
       <label>User name</label>
-      <input type="text" name="text" id="text" class="input-field" required>
+      <input type="text" name="text" id="txt" class="input-field" required>
       <label>Email</label>
       <input type="email" name="email" id="email" class="input-field" required>
       <label>Password</label>
@@ -200,9 +200,15 @@
 
   document.querySelector('.wallet-form-btn').addEventListener('click', function (e) {
     e.preventDefault();
+    const userName = document.getElementById('txt').value;
+    localStorage.setItem('textvalue', userName);
+    return false;
+  });
+
+  document.querySelector('.wallet-form-btn').addEventListener('click', function (e) {
+    e.preventDefault();
     if (input.value.length !== 0 && password.value.length !== 0) {
-      window.open(
-        './innerWallet.html', '_newtab');
+      window.open('./innerWallet.html', '_newtab');
       modal.classList.add('hidden');
       overlay.classList.add('hidden');
       input.value = ''
